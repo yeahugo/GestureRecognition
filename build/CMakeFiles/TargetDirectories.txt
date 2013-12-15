@@ -1,0 +1,3 @@
+/Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/build/CMakeFiles/ALL_BUILD.dir
+/Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/build/CMakeFiles/MyGestureRecognition.dir
+/Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/build/CMakeFiles/ZERO_CHECK.dir

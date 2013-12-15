@@ -1,0 +1,29 @@
+TZERO_CHECK
+v6
+r1
+cCheck dependencies
+cPhaseScriptExecution CMake\ Rules /Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/build/MyGestureRecognition.build/Debug/ZERO_CHECK.build/Script-A40A48A03F4044CFA2A2CFB8.sh
+
+N/Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/build/MyGestureRecognition.build/Debug/ZERO_CHECK.build/Script-A40A48A03F4044CFA2A2CFB8.sh
+c0000000052A71C5700000000000000F1
+t1386683479
+s241
+
+CCheck dependencies
+r0
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciese78c94d75357b841^78cf95d75357b841^---0#1#1#--18"Check dependencies36"43DEFB33-D52C-496D-9F77-5B59CF203088-
+
+CPhaseScriptExecution CMake\ Rules /Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/build/MyGestureRecognition.build/Debug/ZERO_CHECK.build/Script-A40A48A03F4044CFA2A2CFB8.sh
+s408376279.586067
+e408376279.661147
+r1
+xPhaseScriptExecution
+xCMake Rules
+x/Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/build/MyGestureRecognition.build/Debug/ZERO_CHECK.build/Script-A40A48A03F4044CFA2A2CFB8.sh
+oecho ""
+o
+omake -f /Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/build/CMakeScripts/ReRunCMake.make
+omake[1]: `CMakeFiles/cmake.check_cache' is up to date.
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection37"Run custom shell script 'CMake Rules'124"PhaseScriptExecution CMake\ Rules build/MyGestureRecognition.build/Debug/ZERO_CHECK.build/Script-A40A48A03F4044CFA2A2CFB8.sh2b8796d75357b841^6341a9d75357b841^-177"echo ""make -f /Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/build/CMakeScripts/ReRunCMake.makemake[1]: `CMakeFiles/cmake.check_cache' is up to date.3(21%IDEActivityLogMessage2@8"echo ""-408376279#0#8#-0#-----2@113"make -f /Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/build/CMakeScripts/ReRunCMake.make-408376279#9#113#-0#-----2@55"make[1]: `CMakeFiles/cmake.check_cache' is up to date.-408376279#122#55#-0#-----0#0#1#--383"PhaseScriptExecution CMake\ Rules build/MyGestureRecognition.build/Debug/ZERO_CHECK.build/Script-A40A48A03F4044CFA2A2CFB8.sh    cd "/Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition"    /bin/sh -c \"/Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/build/MyGestureRecognition.build/Debug/ZERO_CHECK.build/Script-A40A48A03F4044CFA2A2CFB8.sh\"36"2BEACC41-37FF-436A-8C11-393842A9BDDD-
+bF764F979-272C-4D5F-AB32-6662D0EA4C13
+

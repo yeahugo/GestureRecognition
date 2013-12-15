@@ -1,0 +1,846 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		7D7E603A37C84E93BBD51322 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = DA81FF6C6BF14F5FAEE87C94 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				A40A48A03F4044CFA2A2CFB8 /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		7EB3BFA00FF745EFA3D1FB8A /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = A153CA9B9F8949F3825BA479 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				575363156806425583D82037 /* CMake Rules */,
+			);
+			dependencies = (
+				20050B1B4D12404EA00A0C47 /* PBXTargetDependency */,
+				F1F74E7BF3F64285BFEDF651 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		8F17286B0D264A8585896819 /* MyGestureRecognition.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 307425C913DA48BCA52B4BD4 /* MyGestureRecognition.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		D53D0554185BF5C500CA655F /* GestureRecognition.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D53D0552185BF5C500CA655F /* GestureRecognition.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		36459EEC93324FE28DE8CFA7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5513D8FC4834040B258EFF9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7D7E603A37C84E93BBD51322;
+			remoteInfo = ZERO_CHECK;
+		};
+		556DB40B58C74FE1A70A2A42 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5513D8FC4834040B258EFF9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9577ECB7ADD94EC399BC0224;
+			remoteInfo = MyGestureRecognition;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		307425C913DA48BCA52B4BD4 /* MyGestureRecognition.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MyGestureRecognition.cpp; sourceTree = SOURCE_ROOT; };
+		7DF74C6AB04148CAA05F3426 /* MyGestureRecognition */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = MyGestureRecognition; sourceTree = BUILT_PRODUCTS_DIR; };
+		928B42E079504A51B65AFD46 /* CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		D53D0552185BF5C500CA655F /* GestureRecognition.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GestureRecognition.cpp; sourceTree = "<group>"; };
+		D53D0553185BF5C500CA655F /* GestureRecognition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GestureRecognition.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		2AE4F65A7AAA4B29BBDC8ADF /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				7E418F6756FF412EBC621DE8 /* ALL_BUILD */,
+				44CC0DD69105429C9C1AF674 /* MyGestureRecognition */,
+				AEC36E27C31A41CEB69C0D80 /* ZERO_CHECK */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		3AE8D0E761BC4B88BCB794E7 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				307425C913DA48BCA52B4BD4 /* MyGestureRecognition.cpp */,
+				D53D0552185BF5C500CA655F /* GestureRecognition.cpp */,
+				D53D0553185BF5C500CA655F /* GestureRecognition.h */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		44CC0DD69105429C9C1AF674 /* MyGestureRecognition */ = {
+			isa = PBXGroup;
+			children = (
+				3AE8D0E761BC4B88BCB794E7 /* Source Files */,
+				928B42E079504A51B65AFD46 /* CMakeLists.txt */,
+			);
+			name = MyGestureRecognition;
+			sourceTree = "<group>";
+		};
+		4D6490B271E8423890A1A274 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		51552D5A02A74F62A6D1B10C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		7A632903AC9D4659A3C30F3E /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		7E418F6756FF412EBC621DE8 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				4D6490B271E8423890A1A274 /* CMake Rules */,
+				928B42E079504A51B65AFD46 /* CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		9535480195494E68902D378A = {
+			isa = PBXGroup;
+			children = (
+				2AE4F65A7AAA4B29BBDC8ADF /* Sources */,
+				51552D5A02A74F62A6D1B10C /* Resources */,
+				E035BC0B7BEA4047B1CA4ABB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AEC36E27C31A41CEB69C0D80 /* ZERO_CHECK */ = {
+			isa = PBXGroup;
+			children = (
+				7A632903AC9D4659A3C30F3E /* CMake Rules */,
+				928B42E079504A51B65AFD46 /* CMakeLists.txt */,
+			);
+			name = ZERO_CHECK;
+			sourceTree = "<group>";
+		};
+		E035BC0B7BEA4047B1CA4ABB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7DF74C6AB04148CAA05F3426 /* MyGestureRecognition */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9577ECB7ADD94EC399BC0224 /* MyGestureRecognition */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20CC537372AD4994B7BB7F90 /* Build configuration list for PBXNativeTarget "MyGestureRecognition" */;
+			buildPhases = (
+				F46D9CBB88594A81B4B785A4 /* Sources */,
+				97FAA29DA3854081ACDB21CC /* CMake PostBuild Rules */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F1F74E7BF3F64285BFEDF651 /* PBXTargetDependency */,
+			);
+			name = MyGestureRecognition;
+			productName = MyGestureRecognition;
+			productReference = 7DF74C6AB04148CAA05F3426 /* MyGestureRecognition */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F5513D8FC4834040B258EFF9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+			};
+			buildConfigurationList = FEF7AE49E7644BBBA672229B /* Build configuration list for PBXProject "MyGestureRecognition" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9535480195494E68902D378A;
+			projectDirPath = ..;
+			projectRoot = "";
+			targets = (
+				7EB3BFA00FF745EFA3D1FB8A /* ALL_BUILD */,
+				9577ECB7ADD94EC399BC0224 /* MyGestureRecognition */,
+				7D7E603A37C84E93BBD51322 /* ZERO_CHECK */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		575363156806425583D82037 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/yeahugo/Documents/Search/Computer\\ Vision/MyGestureRecognition/build -f /Users/yeahugo/Documents/Search/Computer\\ Vision/MyGestureRecognition/build/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		97FAA29DA3854081ACDB21CC /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/yeahugo/Documents/Search/Computer\\ Vision/MyGestureRecognition/build -f /Users/yeahugo/Documents/Search/Computer\\ Vision/MyGestureRecognition/build/CMakeScripts/MyGestureRecognition_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		A40A48A03F4044CFA2A2CFB8 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/yeahugo/Documents/Search/Computer\\ Vision/MyGestureRecognition/build -f /Users/yeahugo/Documents/Search/Computer\\ Vision/MyGestureRecognition/build/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F46D9CBB88594A81B4B785A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F17286B0D264A8585896819 /* MyGestureRecognition.cpp in Sources */,
+				D53D0554185BF5C500CA655F /* GestureRecognition.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		20050B1B4D12404EA00A0C47 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9577ECB7ADD94EC399BC0224 /* MyGestureRecognition */;
+			targetProxy = 556DB40B58C74FE1A70A2A42 /* PBXContainerItemProxy */;
+		};
+		F1F74E7BF3F64285BFEDF651 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7D7E603A37C84E93BBD51322 /* ZERO_CHECK */;
+			targetProxy = 36459EEC93324FE28DE8CFA7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0245C8A12C5F430A9DF25C94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include/opencv,
+					/usr/local/include,
+				);
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = "  ";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Debug;
+		};
+		16C914CF55624601BEE9DCE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include/opencv,
+					/usr/local/include,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "    -DNDEBUG  ";
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG  ";
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/usr/local/lib/libopencv_videostab.2.4.7.dylib,
+					/usr/local/lib/libopencv_video.2.4.7.dylib,
+					/usr/local/lib/libopencv_ts.a,
+					/usr/local/lib/libopencv_superres.2.4.7.dylib,
+					/usr/local/lib/libopencv_stitching.2.4.7.dylib,
+					/usr/local/lib/libopencv_photo.2.4.7.dylib,
+					/usr/local/lib/libopencv_ocl.2.4.7.dylib,
+					/usr/local/lib/libopencv_objdetect.2.4.7.dylib,
+					/usr/local/lib/libopencv_nonfree.2.4.7.dylib,
+					/usr/local/lib/libopencv_ml.2.4.7.dylib,
+					/usr/local/lib/libopencv_legacy.2.4.7.dylib,
+					/usr/local/lib/libopencv_imgproc.2.4.7.dylib,
+					/usr/local/lib/libopencv_highgui.2.4.7.dylib,
+					/usr/local/lib/libopencv_gpu.2.4.7.dylib,
+					/usr/local/lib/libopencv_flann.2.4.7.dylib,
+					/usr/local/lib/libopencv_features2d.2.4.7.dylib,
+					/usr/local/lib/libopencv_core.2.4.7.dylib,
+					/usr/local/lib/libopencv_contrib.2.4.7.dylib,
+					/usr/local/lib/libopencv_calib3d.2.4.7.dylib,
+					/usr/local/lib/libopencv_nonfree.2.4.7.dylib,
+					/usr/local/lib/libopencv_ocl.2.4.7.dylib,
+					/usr/local/lib/libopencv_gpu.2.4.7.dylib,
+					/usr/local/lib/libopencv_photo.2.4.7.dylib,
+					/usr/local/lib/libopencv_objdetect.2.4.7.dylib,
+					/usr/local/lib/libopencv_legacy.2.4.7.dylib,
+					/usr/local/lib/libopencv_video.2.4.7.dylib,
+					/usr/local/lib/libopencv_ml.2.4.7.dylib,
+					/usr/local/lib/libopencv_calib3d.2.4.7.dylib,
+					/usr/local/lib/libopencv_features2d.2.4.7.dylib,
+					/usr/local/lib/libopencv_highgui.2.4.7.dylib,
+					/usr/local/lib/libopencv_imgproc.2.4.7.dylib,
+					/usr/local/lib/libopencv_flann.2.4.7.dylib,
+					/usr/local/lib/libopencv_core.2.4.7.dylib,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = MyGestureRecognition;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Release;
+		};
+		1B7E8E9BD1594CFBA0CBEA86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk;
+				SYMROOT = "/Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/build/build";
+			};
+			name = Debug;
+		};
+		3582A0C291C94AD5A30AD750 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include/opencv,
+					/usr/local/include,
+				);
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = "  ";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		39C56D41B0F94736A086B38E /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include/opencv,
+					/usr/local/include,
+				);
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = "  ";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = MinSizeRel;
+		};
+		3E4256B8C2484C76842449FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include/opencv,
+					/usr/local/include,
+				);
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = "  ";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Debug;
+		};
+		59DA4D096B54439FA270B9A4 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include/opencv,
+					/usr/local/include,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "        ";
+				OTHER_CPLUSPLUSFLAGS = "        ";
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/usr/local/lib/libopencv_videostab.2.4.7.dylib,
+					/usr/local/lib/libopencv_video.2.4.7.dylib,
+					/usr/local/lib/libopencv_ts.a,
+					/usr/local/lib/libopencv_superres.2.4.7.dylib,
+					/usr/local/lib/libopencv_stitching.2.4.7.dylib,
+					/usr/local/lib/libopencv_photo.2.4.7.dylib,
+					/usr/local/lib/libopencv_ocl.2.4.7.dylib,
+					/usr/local/lib/libopencv_objdetect.2.4.7.dylib,
+					/usr/local/lib/libopencv_nonfree.2.4.7.dylib,
+					/usr/local/lib/libopencv_ml.2.4.7.dylib,
+					/usr/local/lib/libopencv_legacy.2.4.7.dylib,
+					/usr/local/lib/libopencv_imgproc.2.4.7.dylib,
+					/usr/local/lib/libopencv_highgui.2.4.7.dylib,
+					/usr/local/lib/libopencv_gpu.2.4.7.dylib,
+					/usr/local/lib/libopencv_flann.2.4.7.dylib,
+					/usr/local/lib/libopencv_features2d.2.4.7.dylib,
+					/usr/local/lib/libopencv_core.2.4.7.dylib,
+					/usr/local/lib/libopencv_contrib.2.4.7.dylib,
+					/usr/local/lib/libopencv_calib3d.2.4.7.dylib,
+					/usr/local/lib/libopencv_nonfree.2.4.7.dylib,
+					/usr/local/lib/libopencv_ocl.2.4.7.dylib,
+					/usr/local/lib/libopencv_gpu.2.4.7.dylib,
+					/usr/local/lib/libopencv_photo.2.4.7.dylib,
+					/usr/local/lib/libopencv_objdetect.2.4.7.dylib,
+					/usr/local/lib/libopencv_legacy.2.4.7.dylib,
+					/usr/local/lib/libopencv_video.2.4.7.dylib,
+					/usr/local/lib/libopencv_ml.2.4.7.dylib,
+					/usr/local/lib/libopencv_calib3d.2.4.7.dylib,
+					/usr/local/lib/libopencv_features2d.2.4.7.dylib,
+					/usr/local/lib/libopencv_highgui.2.4.7.dylib,
+					/usr/local/lib/libopencv_imgproc.2.4.7.dylib,
+					/usr/local/lib/libopencv_flann.2.4.7.dylib,
+					/usr/local/lib/libopencv_core.2.4.7.dylib,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = MyGestureRecognition;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		63948394BE4943ABBD146EEE /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include/opencv,
+					/usr/local/include,
+				);
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = "  ";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = MinSizeRel;
+		};
+		8278BF9E3ADB4990ACBDAB14 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk;
+				SYMROOT = "/Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/build/build";
+			};
+			name = MinSizeRel;
+		};
+		ACE461F32D764E2E89F1975D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include/opencv,
+					/usr/local/include,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "    ";
+				OTHER_CPLUSPLUSFLAGS = "    ";
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/usr/local/lib/libopencv_videostab.2.4.7.dylib,
+					/usr/local/lib/libopencv_video.2.4.7.dylib,
+					/usr/local/lib/libopencv_ts.a,
+					/usr/local/lib/libopencv_superres.2.4.7.dylib,
+					/usr/local/lib/libopencv_stitching.2.4.7.dylib,
+					/usr/local/lib/libopencv_photo.2.4.7.dylib,
+					/usr/local/lib/libopencv_ocl.2.4.7.dylib,
+					/usr/local/lib/libopencv_objdetect.2.4.7.dylib,
+					/usr/local/lib/libopencv_nonfree.2.4.7.dylib,
+					/usr/local/lib/libopencv_ml.2.4.7.dylib,
+					/usr/local/lib/libopencv_legacy.2.4.7.dylib,
+					/usr/local/lib/libopencv_imgproc.2.4.7.dylib,
+					/usr/local/lib/libopencv_highgui.2.4.7.dylib,
+					/usr/local/lib/libopencv_gpu.2.4.7.dylib,
+					/usr/local/lib/libopencv_flann.2.4.7.dylib,
+					/usr/local/lib/libopencv_features2d.2.4.7.dylib,
+					/usr/local/lib/libopencv_core.2.4.7.dylib,
+					/usr/local/lib/libopencv_contrib.2.4.7.dylib,
+					/usr/local/lib/libopencv_calib3d.2.4.7.dylib,
+					/usr/local/lib/libopencv_nonfree.2.4.7.dylib,
+					/usr/local/lib/libopencv_ocl.2.4.7.dylib,
+					/usr/local/lib/libopencv_gpu.2.4.7.dylib,
+					/usr/local/lib/libopencv_photo.2.4.7.dylib,
+					/usr/local/lib/libopencv_objdetect.2.4.7.dylib,
+					/usr/local/lib/libopencv_legacy.2.4.7.dylib,
+					/usr/local/lib/libopencv_video.2.4.7.dylib,
+					/usr/local/lib/libopencv_ml.2.4.7.dylib,
+					/usr/local/lib/libopencv_calib3d.2.4.7.dylib,
+					/usr/local/lib/libopencv_features2d.2.4.7.dylib,
+					/usr/local/lib/libopencv_highgui.2.4.7.dylib,
+					/usr/local/lib/libopencv_imgproc.2.4.7.dylib,
+					/usr/local/lib/libopencv_flann.2.4.7.dylib,
+					/usr/local/lib/libopencv_core.2.4.7.dylib,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = MyGestureRecognition;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Debug;
+		};
+		C5A7F49618564AF199D05F4D /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include/opencv,
+					/usr/local/include,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "    -DNDEBUG  ";
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG  ";
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/usr/local/lib/libopencv_videostab.2.4.7.dylib,
+					/usr/local/lib/libopencv_video.2.4.7.dylib,
+					/usr/local/lib/libopencv_ts.a,
+					/usr/local/lib/libopencv_superres.2.4.7.dylib,
+					/usr/local/lib/libopencv_stitching.2.4.7.dylib,
+					/usr/local/lib/libopencv_photo.2.4.7.dylib,
+					/usr/local/lib/libopencv_ocl.2.4.7.dylib,
+					/usr/local/lib/libopencv_objdetect.2.4.7.dylib,
+					/usr/local/lib/libopencv_nonfree.2.4.7.dylib,
+					/usr/local/lib/libopencv_ml.2.4.7.dylib,
+					/usr/local/lib/libopencv_legacy.2.4.7.dylib,
+					/usr/local/lib/libopencv_imgproc.2.4.7.dylib,
+					/usr/local/lib/libopencv_highgui.2.4.7.dylib,
+					/usr/local/lib/libopencv_gpu.2.4.7.dylib,
+					/usr/local/lib/libopencv_flann.2.4.7.dylib,
+					/usr/local/lib/libopencv_features2d.2.4.7.dylib,
+					/usr/local/lib/libopencv_core.2.4.7.dylib,
+					/usr/local/lib/libopencv_contrib.2.4.7.dylib,
+					/usr/local/lib/libopencv_calib3d.2.4.7.dylib,
+					/usr/local/lib/libopencv_nonfree.2.4.7.dylib,
+					/usr/local/lib/libopencv_ocl.2.4.7.dylib,
+					/usr/local/lib/libopencv_gpu.2.4.7.dylib,
+					/usr/local/lib/libopencv_photo.2.4.7.dylib,
+					/usr/local/lib/libopencv_objdetect.2.4.7.dylib,
+					/usr/local/lib/libopencv_legacy.2.4.7.dylib,
+					/usr/local/lib/libopencv_video.2.4.7.dylib,
+					/usr/local/lib/libopencv_ml.2.4.7.dylib,
+					/usr/local/lib/libopencv_calib3d.2.4.7.dylib,
+					/usr/local/lib/libopencv_features2d.2.4.7.dylib,
+					/usr/local/lib/libopencv_highgui.2.4.7.dylib,
+					/usr/local/lib/libopencv_imgproc.2.4.7.dylib,
+					/usr/local/lib/libopencv_flann.2.4.7.dylib,
+					/usr/local/lib/libopencv_core.2.4.7.dylib,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = MyGestureRecognition;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = MinSizeRel;
+		};
+		D32FA1FA34F140F093677374 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk;
+				SYMROOT = "/Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/build/build";
+			};
+			name = Release;
+		};
+		DE72057F5B6546BA96A2CFA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include/opencv,
+					/usr/local/include,
+				);
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = "  ";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Release;
+		};
+		E1E89697BC814CB2BDE04E79 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include/opencv,
+					/usr/local/include,
+				);
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = "  ";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		F3517D4660E64361A042833E /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk;
+				SYMROOT = "/Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/build/build";
+			};
+			name = RelWithDebInfo;
+		};
+		FEE456805E584AADBC2DEBD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include/opencv,
+					/usr/local/include,
+				);
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = "  ";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		20CC537372AD4994B7BB7F90 /* Build configuration list for PBXNativeTarget "MyGestureRecognition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACE461F32D764E2E89F1975D /* Debug */,
+				16C914CF55624601BEE9DCE6 /* Release */,
+				C5A7F49618564AF199D05F4D /* MinSizeRel */,
+				59DA4D096B54439FA270B9A4 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A153CA9B9F8949F3825BA479 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E4256B8C2484C76842449FF /* Debug */,
+				FEE456805E584AADBC2DEBD6 /* Release */,
+				39C56D41B0F94736A086B38E /* MinSizeRel */,
+				3582A0C291C94AD5A30AD750 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		DA81FF6C6BF14F5FAEE87C94 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0245C8A12C5F430A9DF25C94 /* Debug */,
+				DE72057F5B6546BA96A2CFA0 /* Release */,
+				63948394BE4943ABBD146EEE /* MinSizeRel */,
+				E1E89697BC814CB2BDE04E79 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		FEF7AE49E7644BBBA672229B /* Build configuration list for PBXProject "MyGestureRecognition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B7E8E9BD1594CFBA0CBEA86 /* Debug */,
+				D32FA1FA34F140F093677374 /* Release */,
+				8278BF9E3ADB4990ACBDAB14 /* MinSizeRel */,
+				F3517D4660E64361A042833E /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F5513D8FC4834040B258EFF9 /* Project object */;
+}

@@ -1,0 +1,638 @@
+TMyGestureRecognition
+v6
+r1
+cCheck dependencies
+cCompileC build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/Objects-normal/x86_64/MyGestureRecognition.o /Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/MyGestureRecognition.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/Objects-normal/x86_64/GestureRecognition.o /Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/GestureRecognition.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cLd /Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/build/Debug/MyGestureRecognition normal x86_64
+cPhaseScriptExecution CMake\ PostBuild\ Rules /Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/Script-97FAA29DA3854081ACDB21CC.sh
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk
+c0000000052816D9B00000000000000AA
+t1384213915
+s170
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/SDKSettings.plist
+c00000000526CB71C000000000000044C
+t1382856476
+s1100
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/CoreServices/SystemVersion.plist
+c00000000526CB71C00000000000001DB
+t1382856476
+s475
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libSystem.dylib
+c00000000526CB726000000000000681C
+t1382856486
+s26652
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libc++.dylib
+c00000000526CB726000000000006E8B0
+t1382856486
+s452784
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcache.dylib
+c00000000526CB7260000000000004734
+t1382856486
+s18228
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcommonCrypto.dylib
+c00000000526CB726000000000000FC6C
+t1382856486
+s64620
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcompiler_rt.dylib
+c00000000526CB726000000000000F6A0
+t1382856486
+s63136
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcopyfile.dylib
+c00000000526CB7260000000000006254
+t1382856486
+s25172
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcorecrypto.dylib
+c00000000526CB726000000000000E0F8
+t1382856486
+s57592
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libdispatch.dylib
+c00000000526CB726000000000000D6DC
+t1382856486
+s55004
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libdyld.dylib
+c00000000526CB7260000000000006308
+t1382856486
+s25352
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libkeymgr.dylib
+c00000000526CB7260000000000004050
+t1382856486
+s16464
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/liblaunch.dylib
+c00000000526CB7260000000000008570
+t1382856486
+s34160
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libmacho.dylib
+c00000000526CB7260000000000005EA0
+t1382856486
+s24224
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libquarantine.dylib
+c00000000526CB7260000000000005FAC
+t1382856486
+s24492
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libremovefile.dylib
+c00000000526CB7260000000000004440
+t1382856486
+s17472
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_asl.dylib
+c00000000526CB726000000000000AA28
+t1382856486
+s43560
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_blocks.dylib
+c00000000526CB7260000000000003E2C
+t1382856486
+s15916
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_c.dylib
+c00000000526CB7260000000000030A24
+t1382856486
+s199204
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_configuration.dylib
+c00000000526CB7260000000000005E54
+t1382856486
+s24148
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_dnssd.dylib
+c00000000526CB7260000000000006A90
+t1382856486
+s27280
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_info.dylib
+c00000000526CB72600000000000178AC
+t1382856486
+s96428
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_kernel.dylib
+c00000000526CB726000000000001ADC8
+t1382856486
+s110024
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_m.dylib
+c00000000526CB726000000000001028C
+t1382856486
+s66188
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_malloc.dylib
+c00000000526CB7260000000000008800
+t1382856486
+s34816
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_network.dylib
+c00000000526CB7260000000000011090
+t1382856486
+s69776
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_notify.dylib
+c00000000526CB726000000000000882C
+t1382856486
+s34860
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_platform.dylib
+c00000000526CB72600000000000067AC
+t1382856486
+s26540
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_pthread.dylib
+c00000000526CB7260000000000008DEC
+t1382856486
+s36332
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_sandbox.dylib
+c00000000526CB7260000000000004C08
+t1382856486
+s19464
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_stats.dylib
+c00000000526CB72600000000000023C0
+t1382856486
+s9152
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libunc.dylib
+c00000000526CB726000000000000439C
+t1382856486
+s17308
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libunwind.dylib
+c00000000526CB7260000000000006768
+t1382856486
+s26472
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libxpc.dylib
+c00000000526CB72600000000000172F4
+t1382856486
+s94964
+
+N/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.0/lib/darwin/libclang_rt.osx.a
+c00000000526CB74E0000000000001750
+t1382856526
+s5968
+
+N/Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/GestureRecognition.cpp
+c0000000052AD9E410000000000001D5F
+t1387109953
+s7519
+
+N/Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/GestureRecognition.h
+c0000000052ABBE440000000000000126
+t1386987076
+s294
+
+N/Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/MyGestureRecognition.cpp
+c0000000052ABBE510000000000000C6E
+t1386987089
+s3182
+
+N/Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/build/Debug/MyGestureRecognition
+t1387109955
+s88028
+
+N/Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/Objects-normal/x86_64/GestureRecognition.o
+t1387109955
+s361920
+
+N/Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/Objects-normal/x86_64/MyGestureRecognition.LinkFileList
+c0000000052ABBE560000000000000166
+t1386987094
+s358
+
+N/Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/Objects-normal/x86_64/MyGestureRecognition.o
+t1386987095
+s217624
+
+N/Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/Script-97FAA29DA3854081ACDB21CC.sh
+c0000000052A71C5700000000000000F5
+t1386683479
+s245
+
+N/usr/local/include/opencv2/calib3d/calib3d.hpp
+c00000000527A519F0000000000009303
+t1383747999
+s37635
+
+N/usr/local/include/opencv2/contrib/contrib.hpp
+c00000000527A519F0000000000009647
+t1383747999
+s38471
+
+N/usr/local/include/opencv2/contrib/openfabmap.hpp
+c00000000527A519F0000000000003207
+t1383747999
+s12807
+
+N/usr/local/include/opencv2/contrib/retina.hpp
+c00000000527A519F0000000000005D96
+t1383747999
+s23958
+
+N/usr/local/include/opencv2/core/core.hpp
+c00000000527A519F000000000002D606
+t1383747999
+s185862
+
+N/usr/local/include/opencv2/core/core_c.h
+c00000000527A519F00000000000132A0
+t1383747999
+s78496
+
+N/usr/local/include/opencv2/core/mat.hpp
+c00000000527A519F0000000000013A6F
+t1383747999
+s80495
+
+N/usr/local/include/opencv2/core/operations.hpp
+c00000000527A519F0000000000020269
+t1383747999
+s131689
+
+N/usr/local/include/opencv2/core/types_c.h
+c00000000527A519F000000000000E07F
+t1383747999
+s57471
+
+N/usr/local/include/opencv2/core/version.hpp
+c00000000527A519F0000000000000BC5
+t1383747999
+s3013
+
+N/usr/local/include/opencv2/features2d/features2d.hpp
+c00000000527A519F000000000000F98A
+t1383747999
+s63882
+
+N/usr/local/include/opencv2/flann/config.h
+c00000000527A519F00000000000006FD
+t1383747999
+s1789
+
+N/usr/local/include/opencv2/flann/defines.h
+c00000000527A519F000000000000124B
+t1383747999
+s4683
+
+N/usr/local/include/opencv2/flann/miniflann.hpp
+c00000000527A519F0000000000001785
+t1383747999
+s6021
+
+N/usr/local/include/opencv2/highgui/highgui.hpp
+c00000000527A519F00000000000023CA
+t1383747999
+s9162
+
+N/usr/local/include/opencv2/highgui/highgui_c.h
+c00000000527A519F00000000000066C9
+t1383747999
+s26313
+
+N/usr/local/include/opencv2/imgproc/imgproc.hpp
+c00000000527A519F000000000000DBE5
+t1383747999
+s56293
+
+N/usr/local/include/opencv2/imgproc/imgproc_c.h
+c00000000527A519F000000000000767F
+t1383747999
+s30335
+
+N/usr/local/include/opencv2/imgproc/types_c.h
+c00000000527A519F0000000000004034
+t1383747999
+s16436
+
+N/usr/local/include/opencv2/ml/ml.hpp
+c00000000527A519F00000000000132A1
+t1383747999
+s78497
+
+N/usr/local/include/opencv2/objdetect/objdetect.hpp
+c00000000527A519F00000000000095A1
+t1383747999
+s38305
+
+N/usr/local/include/opencv2/opencv.hpp
+c00000000527A519F0000000000000ABF
+t1383747999
+s2751
+
+N/usr/local/include/opencv2/photo/photo.hpp
+c00000000527A519F0000000000000F9D
+t1383747999
+s3997
+
+N/usr/local/include/opencv2/photo/photo_c.h
+c00000000527A519F0000000000000A57
+t1383747999
+s2647
+
+N/usr/local/include/opencv2/video/background_segm.hpp
+c00000000527A519F0000000000002A72
+t1383747999
+s10866
+
+N/usr/local/include/opencv2/video/tracking.hpp
+c00000000527A519F00000000000047FF
+t1383747999
+s18431
+
+N/usr/local/include/opencv2/video/video.hpp
+c00000000527A519F0000000000000970
+t1383747999
+s2416
+
+N/usr/local/lib/libopencv_calib3d.2.4.7.dylib
+c0000000052899AEB000000000009A1E8
+t1384749803
+s631272
+
+N/usr/local/lib/libopencv_contrib.2.4.7.dylib
+c0000000052899AEC00000000000EBC1C
+t1384749804
+s965660
+
+N/usr/local/lib/libopencv_core.2.4.7.dylib
+c0000000052899AEA000000000021BB04
+t1384749802
+s2210564
+
+N/usr/local/lib/libopencv_features2d.2.4.7.dylib
+c0000000052899AEB00000000000AFFE8
+t1384749803
+s720872
+
+N/usr/local/lib/libopencv_flann.2.4.7.dylib
+c0000000052899AEA0000000000082D5C
+t1384749802
+s535900
+
+N/usr/local/lib/libopencv_gpu.2.4.7.dylib
+c0000000052899AEB0000000000020508
+t1384749803
+s132360
+
+N/usr/local/lib/libopencv_highgui.2.4.7.dylib
+c0000000052899AEA0000000000221A54
+t1384749802
+s2234964
+
+N/usr/local/lib/libopencv_imgproc.2.4.7.dylib
+c0000000052899AEA0000000000207038
+t1384749802
+s2125880
+
+N/usr/local/lib/libopencv_legacy.2.4.7.dylib
+c0000000052899AEB00000000000FCEA0
+t1384749803
+s1035936
+
+N/usr/local/lib/libopencv_ml.2.4.7.dylib
+c0000000052899AEB000000000007A768
+t1384749803
+s501608
+
+N/usr/local/lib/libopencv_nonfree.2.4.7.dylib
+c0000000052899AEC0000000000030798
+t1384749804
+s198552
+
+N/usr/local/lib/libopencv_objdetect.2.4.7.dylib
+c0000000052899AEB000000000007BFEC
+t1384749803
+s507884
+
+N/usr/local/lib/libopencv_ocl.2.4.7.dylib
+c0000000052899AEC00000000001B2FE8
+t1384749804
+s1781736
+
+N/usr/local/lib/libopencv_photo.2.4.7.dylib
+c0000000052899AEB000000000001ECA8
+t1384749803
+s126120
+
+N/usr/local/lib/libopencv_stitching.2.4.7.dylib
+c0000000052899AED0000000000081848
+t1384749805
+s530504
+
+N/usr/local/lib/libopencv_superres.2.4.7.dylib
+c0000000052899AED000000000003E84C
+t1384749805
+s256076
+
+N/usr/local/lib/libopencv_ts.a
+c0000000052899AED0000000000126448
+t1384749805
+s1205320
+
+N/usr/local/lib/libopencv_video.2.4.7.dylib
+c0000000052899AEB000000000004AB68
+t1384749803
+s306024
+
+N/usr/local/lib/libopencv_videostab.2.4.7.dylib
+c0000000052899AED00000000000310F8
+t1384749805
+s200952
+
+CBuild AST from /Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/GestureRecognition.cpp
+r0
+
+CBuild AST from /Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/MyGestureRecognition.cpp
+r0
+
+CCheck dependencies
+r0
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciesf2092179e65db841^ee212179e65db841^---0#1#1#--18"Check dependencies36"65A82BD3-7A22-40A6-A1ED-48A1111229DD-
+
+CCompileC build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/Objects-normal/x86_64/GestureRecognition.o /Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/GestureRecognition.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s408802754.042309
+e408802755.352569
+r1
+xCompileC
+xbuild/MyGestureRecognition.build/Debug/MyGestureRecognition.build/Objects-normal/x86_64/GestureRecognition.o
+x/Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/GestureRecognition.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/GestureRecognition.cpp
+d/usr/local/include/opencv2/objdetect/objdetect.hpp
+d/usr/local/include/opencv2/core/core.hpp
+d/usr/local/include/opencv2/core/types_c.h
+d/usr/local/include/opencv2/core/version.hpp
+d/usr/local/include/opencv2/core/operations.hpp
+d/usr/local/include/opencv2/core/mat.hpp
+d/usr/local/include/opencv2/highgui/highgui.hpp
+d/usr/local/include/opencv2/highgui/highgui_c.h
+d/usr/local/include/opencv2/core/core_c.h
+d/usr/local/include/opencv2/imgproc/imgproc.hpp
+d/usr/local/include/opencv2/imgproc/types_c.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection99"Compile /Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/GestureRecognition.cpp202"CompileC build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/Objects-normal/x86_64/GestureRecognition.o GestureRecognition.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler8df00ac2d55db841^7c425ac3d55db841^---0#0#1#-19%DVTDocumentLocation2@100"file:///Users/yeahugo/Documents/Search/Computer%20Vision/MyGestureRecognition/GestureRecognition.cpp0000000000000000^2630"CompileC build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/Objects-normal/x86_64/GestureRecognition.o GestureRecognition.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition"    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.9 -g -Wno-sign-conversion -I/Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/build/Debug/include -I/usr/local/include/opencv -I/usr/local/include -I/Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/DerivedSources/x86_64 -I/Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/build/Debug -MMD -MT dependencies -MF /Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/Objects-normal/x86_64/GestureRecognition.d --serialize-diagnostics /Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/Objects-normal/x86_64/GestureRecognition.dia -c /Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/GestureRecognition.cpp -o /Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/Objects-normal/x86_64/GestureRecognition.o36"E4DE6A8B-272A-4030-B3FE-BFB9A57E2506-
+bF8CB0B0A-9B05-4D1D-B00D-2044F3E3820C
+
+CCompileC build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/Objects-normal/x86_64/MyGestureRecognition.o /Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/MyGestureRecognition.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s408679894.140994
+e408679895.740470
+r1
+xCompileC
+xbuild/MyGestureRecognition.build/Debug/MyGestureRecognition.build/Objects-normal/x86_64/MyGestureRecognition.o
+x/Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/MyGestureRecognition.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/MyGestureRecognition.cpp
+d/usr/local/include/opencv2/opencv.hpp
+d/usr/local/include/opencv2/core/core_c.h
+d/usr/local/include/opencv2/core/types_c.h
+d/usr/local/include/opencv2/core/core.hpp
+d/usr/local/include/opencv2/core/version.hpp
+d/usr/local/include/opencv2/core/operations.hpp
+d/usr/local/include/opencv2/core/mat.hpp
+d/usr/local/include/opencv2/flann/miniflann.hpp
+d/usr/local/include/opencv2/flann/defines.h
+d/usr/local/include/opencv2/flann/config.h
+d/usr/local/include/opencv2/imgproc/imgproc_c.h
+d/usr/local/include/opencv2/imgproc/types_c.h
+d/usr/local/include/opencv2/imgproc/imgproc.hpp
+d/usr/local/include/opencv2/photo/photo.hpp
+d/usr/local/include/opencv2/photo/photo_c.h
+d/usr/local/include/opencv2/video/video.hpp
+d/usr/local/include/opencv2/video/tracking.hpp
+d/usr/local/include/opencv2/video/background_segm.hpp
+d/usr/local/include/opencv2/features2d/features2d.hpp
+d/usr/local/include/opencv2/objdetect/objdetect.hpp
+d/usr/local/include/opencv2/calib3d/calib3d.hpp
+d/usr/local/include/opencv2/ml/ml.hpp
+d/usr/local/include/opencv2/highgui/highgui_c.h
+d/usr/local/include/opencv2/highgui/highgui.hpp
+d/usr/local/include/opencv2/contrib/contrib.hpp
+d/usr/local/include/opencv2/contrib/retina.hpp
+d/usr/local/include/opencv2/contrib/openfabmap.hpp
+oIn file included from /Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/MyGestureRecognition.cpp:1:
+oIn file included from /usr/local/include/opencv2/opencv.hpp:56:
+o/usr/local/include/opencv2/ml/ml.hpp:957:18: warning: 'CvForestTree::train' hides overloaded virtual functions [-Woverloaded-virtual]
+o    virtual bool train( CvDTreeTrainData* trainData, const CvMat* _subsample_idx, CvRTrees* forest );
+o                 ^
+o/usr/local/include/opencv2/ml/ml.hpp:863:18: note: hidden overloaded virtual function 'CvDTree::train' declared here
+o    virtual bool train( CvMLData* trainData, CvDTreeParams params=CvDTreeParams() );
+o                 ^
+o/usr/local/include/opencv2/ml/ml.hpp:873:26: note: hidden overloaded virtual function 'CvDTree::train' declared here
+o    CV_WRAP virtual bool train( const cv::Mat& trainData, int tflag,
+o                         ^
+o/usr/local/include/opencv2/ml/ml.hpp:1145:18: warning: 'CvBoostTree::train' hides overloaded virtual functions [-Woverloaded-virtual]
+o    virtual bool train( CvDTreeTrainData* trainData,
+o                 ^
+o/usr/local/include/opencv2/ml/ml.hpp:863:18: note: hidden overloaded virtual function 'CvDTree::train' declared here
+o    virtual bool train( CvMLData* trainData, CvDTreeParams params=CvDTreeParams() );
+o                 ^
+o/usr/local/include/opencv2/ml/ml.hpp:873:26: note: hidden overloaded virtual function 'CvDTree::train' declared here
+o    CV_WRAP virtual bool train( const cv::Mat& trainData, int tflag,
+o                         ^
+o/Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/MyGestureRecognition.cpp:27:13: warning: unused function 'detectTest' [-Wunused-function]
+ostatic void detectTest(const HOGDescriptor& hog, Mat& imageData) {
+o            ^
+o3 warnings generated.
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection101"Compile /Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/MyGestureRecognition.cpp206"CompileC build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/Objects-normal/x86_64/MyGestureRecognition.o MyGestureRecognition.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler333624d6f55bb841^c98ebdd7f55bb841^-1774"In file included from /Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/MyGestureRecognition.cpp:1:In file included from /usr/local/include/opencv2/opencv.hpp:56:/usr/local/include/opencv2/ml/ml.hpp:957:18: warning: 'CvForestTree::train' hides overloaded virtual functions [-Woverloaded-virtual]    virtual bool train( CvDTreeTrainData* trainData, const CvMat* _subsample_idx, CvRTrees* forest );                 ^/usr/local/include/opencv2/ml/ml.hpp:863:18: note: hidden overloaded virtual function 'CvDTree::train' declared here    virtual bool train( CvMLData* trainData, CvDTreeParams params=CvDTreeParams() );                 ^/usr/local/include/opencv2/ml/ml.hpp:873:26: note: hidden overloaded virtual function 'CvDTree::train' declared here    CV_WRAP virtual bool train( const cv::Mat& trainData, int tflag,                         ^/usr/local/include/opencv2/ml/ml.hpp:1145:18: warning: 'CvBoostTree::train' hides overloaded virtual functions [-Woverloaded-virtual]    virtual bool train( CvDTreeTrainData* trainData,                 ^/usr/local/include/opencv2/ml/ml.hpp:863:18: note: hidden overloaded virtual function 'CvDTree::train' declared here    virtual bool train( CvMLData* trainData, CvDTreeParams params=CvDTreeParams() );                 ^/usr/local/include/opencv2/ml/ml.hpp:873:26: note: hidden overloaded virtual function 'CvDTree::train' declared here    CV_WRAP virtual bool train( const cv::Mat& trainData, int tflag,                         ^/Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/MyGestureRecognition.cpp:27:13: warning: unused function 'detectTest' [-Wunused-function]static void detectTest(const HOGDescriptor& hog, Mat& imageData) {            ^3 warnings generated.3(36%IDEClangDiagnosticActivityLogMessage2@56"'CvForestTree::train' hides overloaded virtual functions-408679895#18446744073709551615#0#4(2@118"In file included from /Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/MyGestureRecognition.cpp:1:-408679895#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@102"file:///Users/yeahugo/Documents/Search/Computer%20Vision/MyGestureRecognition/MyGestureRecognition.cpp0000000000000000^0#9#0#9#9#0#21"Apple LLVM 5.0 Notice--2@63"In file included from /usr/local/include/opencv2/opencv.hpp:56:-408679895#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@44"file:///usr/local/include/opencv2/opencv.hpp0000000000000000^55#9#55#9#2606#0#21"Apple LLVM 5.0 Notice--2@65"Hidden overloaded virtual function 'CvDTree::train' declared here-408679895#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@43"file:///usr/local/include/opencv2/ml/ml.hpp0000000000000000^862#17#862#17#30742#0#14"Semantic Issue--2@65"Hidden overloaded virtual function 'CvDTree::train' declared here-408679895#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@43"file:///usr/local/include/opencv2/ml/ml.hpp0000000000000000^872#25#872#25#31220#0#14"Semantic Issue--1#27"com.apple.dt.IDE.diagnostic3@43"file:///usr/local/include/opencv2/ml/ml.hpp0000000000000000^956#17#956#17#35039#0#14"Semantic Issue--2@55"'CvBoostTree::train' hides overloaded virtual functions-408679895#18446744073709551615#0#4(2@118"In file included from /Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/MyGestureRecognition.cpp:1:-408679895#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@102"file:///Users/yeahugo/Documents/Search/Computer%20Vision/MyGestureRecognition/MyGestureRecognition.cpp0000000000000000^0#9#0#9#9#0#21"Apple LLVM 5.0 Notice--2@63"In file included from /usr/local/include/opencv2/opencv.hpp:56:-408679895#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@44"file:///usr/local/include/opencv2/opencv.hpp0000000000000000^55#9#55#9#2606#0#21"Apple LLVM 5.0 Notice--2@65"Hidden overloaded virtual function 'CvDTree::train' declared here-408679895#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@43"file:///usr/local/include/opencv2/ml/ml.hpp0000000000000000^862#17#862#17#30742#0#14"Semantic Issue--2@65"Hidden overloaded virtual function 'CvDTree::train' declared here-408679895#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@43"file:///usr/local/include/opencv2/ml/ml.hpp0000000000000000^872#25#872#25#31220#0#14"Semantic Issue--1#27"com.apple.dt.IDE.diagnostic3@43"file:///usr/local/include/opencv2/ml/ml.hpp0000000000000000^1144#17#1144#17#43137#0#14"Semantic Issue--2@28"Unused function 'detectTest'-408679895#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@102"file:///Users/yeahugo/Documents/Search/Computer%20Vision/MyGestureRecognition/MyGestureRecognition.cpp0000000000000000^26#12#26#12#703#0#19"Unused Entity Issue--0#0#1#-19%DVTDocumentLocation4@102"file:///Users/yeahugo/Documents/Search/Computer%20Vision/MyGestureRecognition/MyGestureRecognition.cpp0000000000000000^2642"CompileC build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/Objects-normal/x86_64/MyGestureRecognition.o MyGestureRecognition.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition"    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.9 -g -Wno-sign-conversion -I/Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/build/Debug/include -I/usr/local/include/opencv -I/usr/local/include -I/Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/DerivedSources/x86_64 -I/Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/build/Debug -MMD -MT dependencies -MF /Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/Objects-normal/x86_64/MyGestureRecognition.d --serialize-diagnostics /Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/Objects-normal/x86_64/MyGestureRecognition.dia -c /Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/MyGestureRecognition.cpp -o /Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/Objects-normal/x86_64/MyGestureRecognition.o36"E97E11E5-08F9-4E3F-9ACE-FE41C8C9D71D-
+bD8556562-84C3-4973-AD86-70F77E571075
+
+CLd /Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/build/Debug/MyGestureRecognition normal x86_64
+s408802755.355488
+e408802755.397190
+r1
+xLd
+x/Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/build/Debug/MyGestureRecognition
+xnormal
+xx86_64
+d/Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/Objects-normal/x86_64/MyGestureRecognition.LinkFileList
+d/Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/Objects-normal/x86_64/MyGestureRecognition.o
+d/Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/Objects-normal/x86_64/GestureRecognition.o
+d/usr/local/lib/libopencv_videostab.2.4.7.dylib
+d/usr/local/lib/libopencv_video.2.4.7.dylib
+d/usr/local/lib/libopencv_ts.a
+d/usr/local/lib/libopencv_superres.2.4.7.dylib
+d/usr/local/lib/libopencv_stitching.2.4.7.dylib
+d/usr/local/lib/libopencv_photo.2.4.7.dylib
+d/usr/local/lib/libopencv_ocl.2.4.7.dylib
+d/usr/local/lib/libopencv_objdetect.2.4.7.dylib
+d/usr/local/lib/libopencv_nonfree.2.4.7.dylib
+d/usr/local/lib/libopencv_ml.2.4.7.dylib
+d/usr/local/lib/libopencv_legacy.2.4.7.dylib
+d/usr/local/lib/libopencv_imgproc.2.4.7.dylib
+d/usr/local/lib/libopencv_highgui.2.4.7.dylib
+d/usr/local/lib/libopencv_gpu.2.4.7.dylib
+d/usr/local/lib/libopencv_flann.2.4.7.dylib
+d/usr/local/lib/libopencv_features2d.2.4.7.dylib
+d/usr/local/lib/libopencv_core.2.4.7.dylib
+d/usr/local/lib/libopencv_contrib.2.4.7.dylib
+d/usr/local/lib/libopencv_calib3d.2.4.7.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libc++.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libSystem.dylib
+d/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.0/lib/darwin/libclang_rt.osx.a
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcache.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcommonCrypto.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcompiler_rt.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcopyfile.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcorecrypto.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libdispatch.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libdyld.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libkeymgr.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/liblaunch.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libmacho.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libquarantine.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libremovefile.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_asl.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_blocks.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_c.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_configuration.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_dnssd.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_info.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_kernel.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_m.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_malloc.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_network.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_notify.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_platform.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_pthread.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_sandbox.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_stats.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libunc.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libunwind.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libxpc.dylib
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection106"Link /Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/build/Debug/MyGestureRecognition49"Ld build/Debug/MyGestureRecognition normal x86_64d11e5bc3d55db841^f7ae65c3d55db841^---0#0#1#--2622"Ld build/Debug/MyGestureRecognition normal x86_64    cd "/Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition"    setenv MACOSX_DEPLOYMENT_TARGET 10.9    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -L/Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/build/Debug -F/Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/build/Debug -filelist /Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/Objects-normal/x86_64/MyGestureRecognition.LinkFileList -mmacosx-version-min=10.9 -Wl,-search_paths_first -Wl,-headerpad_max_install_names /usr/local/lib/libopencv_videostab.2.4.7.dylib /usr/local/lib/libopencv_video.2.4.7.dylib /usr/local/lib/libopencv_ts.a /usr/local/lib/libopencv_superres.2.4.7.dylib /usr/local/lib/libopencv_stitching.2.4.7.dylib /usr/local/lib/libopencv_photo.2.4.7.dylib /usr/local/lib/libopencv_ocl.2.4.7.dylib /usr/local/lib/libopencv_objdetect.2.4.7.dylib /usr/local/lib/libopencv_nonfree.2.4.7.dylib /usr/local/lib/libopencv_ml.2.4.7.dylib /usr/local/lib/libopencv_legacy.2.4.7.dylib /usr/local/lib/libopencv_imgproc.2.4.7.dylib /usr/local/lib/libopencv_highgui.2.4.7.dylib /usr/local/lib/libopencv_gpu.2.4.7.dylib /usr/local/lib/libopencv_flann.2.4.7.dylib /usr/local/lib/libopencv_features2d.2.4.7.dylib /usr/local/lib/libopencv_core.2.4.7.dylib /usr/local/lib/libopencv_contrib.2.4.7.dylib /usr/local/lib/libopencv_calib3d.2.4.7.dylib /usr/local/lib/libopencv_nonfree.2.4.7.dylib /usr/local/lib/libopencv_ocl.2.4.7.dylib /usr/local/lib/libopencv_gpu.2.4.7.dylib /usr/local/lib/libopencv_photo.2.4.7.dylib /usr/local/lib/libopencv_objdetect.2.4.7.dylib /usr/local/lib/libopencv_legacy.2.4.7.dylib /usr/local/lib/libopencv_video.2.4.7.dylib /usr/local/lib/libopencv_ml.2.4.7.dylib /usr/local/lib/libopencv_calib3d.2.4.7.dylib /usr/local/lib/libopencv_features2d.2.4.7.dylib /usr/local/lib/libopencv_highgui.2.4.7.dylib /usr/local/lib/libopencv_imgproc.2.4.7.dylib /usr/local/lib/libopencv_flann.2.4.7.dylib /usr/local/lib/libopencv_core.2.4.7.dylib -Xlinker -dependency_info -Xlinker /Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/Objects-normal/x86_64/MyGestureRecognition_dependency_info.dat -o /Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/build/Debug/MyGestureRecognition36"F1FB76A3-D837-464E-ADDF-D02CD1CA07FE-
+bF8CB0B0A-9B05-4D1D-B00D-2044F3E3820C
+
+CPhaseScriptExecution CMake\ PostBuild\ Rules /Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/Script-97FAA29DA3854081ACDB21CC.sh
+s408807033.131690
+e408807033.159924
+r1
+xPhaseScriptExecution
+xCMake PostBuild Rules
+x/Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/Script-97FAA29DA3854081ACDB21CC.sh
+oecho "Depend check for xcode"
+oDepend check for xcode
+ocd /Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/build && make -C /Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/build -f /Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/build/CMakeScripts/XCODE_DEPEND_HELPER.make PostBuild.MyGestureRecognition.Debug
+omake[1]: Nothing to be done for `PostBuild.MyGestureRecognition.Debug'.
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection47"Run custom shell script 'CMake PostBuild Rules'145"PhaseScriptExecution CMake\ PostBuild\ Rules build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/Script-97FAA29DA3854081ACDB21CC.shf52a2279e65db841^02f32879e65db841^-445"echo "Depend check for xcode"Depend check for xcodecd /Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/build && make -C /Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/build -f /Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/build/CMakeScripts/XCODE_DEPEND_HELPER.make PostBuild.MyGestureRecognition.Debugmake[1]: Nothing to be done for `PostBuild.MyGestureRecognition.Debug'.4(21%IDEActivityLogMessage2@30"echo "Depend check for xcode"-408807033#0#30#-0#-----2@23"Depend check for xcode-408807033#30#23#-0#-----2@320"cd /Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/build && make -C /Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/build -f /Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/build/CMakeScripts/XCODE_DEPEND_HELPER.make PostBuild.MyGestureRecognition.Debug-408807033#53#320#-0#-----2@72"make[1]: Nothing to be done for `PostBuild.MyGestureRecognition.Debug'.-408807033#373#72#-0#-----0#0#1#--414"PhaseScriptExecution CMake\ PostBuild\ Rules build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/Script-97FAA29DA3854081ACDB21CC.sh    cd "/Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition"    /bin/sh -c \"/Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/Script-97FAA29DA3854081ACDB21CC.sh\"36"9BB75BBD-8D8B-4C10-AAC0-C9398A582059-
+b0042B9BA-A382-4861-A353-06C4485DB509
+
