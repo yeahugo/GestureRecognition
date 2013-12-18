@@ -39,15 +39,31 @@ bool isFindFace;
 Mat hist;
 Mat histimg = Mat::zeros(200, 320, CV_8UC3);
 Mat backproj;
+Mat saveImage;
+
+const char* trackbar_name = "on_or_off" ;
 
 float hranges[] = {0,180};
 int hsize = 16;
 const float* phranges = hranges;
 
+void on_or_off(int pos)
+{
+    if ( 0 == pos  )
+	{
+        cv::imshow("saveImage", saveImage);
+	}
+	if( 1 == pos )
+	{
+        IplImage saveIplImage = saveImage.operator _IplImage();
+        cvSaveImage("saveImage1.jpg", &saveIplImage);
+//        imwrite("saveImage.jpg", saveImage);
+	}
+}
 /**
  * @function main
  */
-int main( void )
+int main3( void )
 {
     CvCapture* capture;
     Mat frame;
@@ -132,6 +148,7 @@ void detectAndDisplay( Mat frame )
             }
         }
     } else {
+        saveImage = frame;
         calcBackProject(&hue, 1, 0, hist, backproj, &phranges);
         backproj &= mask;
         cvtColor(backproj, backproj, CV_GRAY2BGR);
@@ -144,10 +161,12 @@ void detectAndDisplay( Mat frame )
         cv::findContours(backproj, contours, hierarchy, CV_RETR_EXTERNAL, CV_CHAIN_APPROX_TC89_L1);
         
         int massMin = 5000;
-        cv::Scalar color( 255, 255, 255 ); //random color
+        cv::Scalar color( 255, 255, 255 );
         
         std::vector<Rect> faces;
-//        eyes_cascade.detectMultiScale(frame_gray, faces);
+       
+        int value = 0;
+        cvCreateTrackbar(trackbar_name, window_name.c_str(), &value, 1,on_or_off);
         
         int idx = 0;
         for (; idx >= 0; idx = hierarchy[idx][0]) {
@@ -155,76 +174,13 @@ void detectAndDisplay( Mat frame )
             int cMass = mom.m00;
             Point center = Point2d(mom.m10/mom.m00,mom.m01/mom.m00);
             cv::Rect bRect = cv::boundingRect( cv::Mat(contours[idx]) );
-//            cv::Rect bRect = rotRect.boundingRect();
-            
-            
-            
+
             if (cMass > massMin) {
                 cv::Mat contourImg(backproj.size(), backproj.type(), cv::Scalar(0));
                 cv::drawContours(backproj, contours, idx, color,CV_FILLED,8,hierarchy);
-                backproj += contourImg;
-
-                //检测手掌
-                Mat objectROI = frame(bRect);
-                std::vector<Rect> objects;
-                palm_cascade.detectMultiScale(objectROI, objects,2,3,0|CV_HAAR_FIND_BIGGEST_OBJECT);
-                
-                if (objects.size() > 0) {
-                    rectangle(backproj, bRect, color, 3);
-                } else {
-                    //检测剪刀
-                    cross_cascade.detectMultiScale(objectROI,objects,2,3,0|CV_HAAR_FIND_BIGGEST_OBJECT);
-                    
-                    if (objects.size() > 0) {
-                        circle(backproj, center, bRect.size().width, color);
-                    }
-                }
-                
-//                face_cascade.detectMultiScale(backproj, objects);
-//                if (objects.size() == 0) {
-//                    rectangle(backproj, bRect, cv::Scalar(255,255,255), 3);
-//                }
-//                else
-                
-//                Mat faceROI = Mat(frame_gray,bRect);
-//                std::vector<Rect> objects;
-//                bool isFace = false;
-//                if(faces.size() > 0)
-//                {
-//                    cv::Rect rect = faces[0] & bRect;
-//                    if (rect.area() > 0) {
-//                        isFace = true;
-//                    }
-//                }
-                
-//                if (!isFace) {
-//                    Mat objectROI = Mat(backproj,bRect);
-//                    
-//                    rectangle(backproj, bRect, color, 3);
-//                    //检测手掌
-//                    palm_cascade.detectMultiScale(objectROI, objects,2,3,0|CV_HAAR_FIND_BIGGEST_OBJECT);
-//                    if (objects.size() > 0) {
-//                        rectangle(backproj, bRect, color, 3);
-//                    }
-//                    else {
-//                        //检测剪刀
-//                        cross_cascade.detectMultiScale(objectROI,objects,2,3,0|CV_HAAR_FIND_BIGGEST_OBJECT);
-//                        
-//                        if (objects.size() > 0) {
-//                            ellipse(backproj, rotRect, color);
-//                        }
-//                        else
-//                        {
-//                        //检测拳头
-//                        fist_cascade.detectMultiScale(objectROI,objects,2,3,0|CV_HAAR_FIND_BIGGEST_OBJECT);
-//                            if (objects.size() > 0) {
-//                                circle(backproj, center, bRect.size().width, color);
-//                            }
-//                        }
-//                    }
-//                }
             }
         }
+        
         imshow(window_name, backproj);
     }
 }

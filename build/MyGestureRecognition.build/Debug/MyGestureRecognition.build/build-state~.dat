@@ -2,9 +2,12 @@ TMyGestureRecognition
 v6
 r1
 cCheck dependencies
+cCompileC build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/Objects-normal/x86_64/GraphUtils.o /Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/GraphUtils.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/Objects-normal/x86_64/slic.o /Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/slic.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/Objects-normal/x86_64/GestureRecognitionImage.o /Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/GestureRecognitionImage.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/Objects-normal/x86_64/MyGestureRecognition.o /Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/MyGestureRecognition.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/Objects-normal/x86_64/GestureRecognition.o /Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/GestureRecognition.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
 cLd /Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/build/Debug/MyGestureRecognition normal x86_64
-cPhaseScriptExecution CMake\ PostBuild\ Rules /Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/Script-97FAA29DA3854081ACDB21CC.sh
 
 N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk
 c0000000052816D9B00000000000000AA
@@ -21,39 +24,260 @@ c00000000526CB71C00000000000001DB
 t1382856476
 s475
 
+N/Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/GestureRecognition.cpp
+c0000000052B0E5750000000000001440
+t1387324789
+s5184
+
+N/Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/GestureRecognitionImage.cpp
+c0000000052B0FD010000000000001D4D
+t1387330817
+s7501
+
+N/Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/GraphUtils.cpp
+c0000000052AED69C00000000000039E4
+t1387189916
+s14820
+
 N/Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/MyGestureRecognition.cpp
-c0000000052A71C53000000000000050E
-t1386683475
-s1294
+c0000000052ABBE510000000000000C6E
+t1386987089
+s3182
 
 N/Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/build/Debug/MyGestureRecognition
 t2
 s0
 
+N/Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/Objects-normal/x86_64/GestureRecognition.o
+t1387330864
+s360852
+
+N/Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/Objects-normal/x86_64/GestureRecognitionImage.o
+t1387330863
+s499036
+
+N/Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/Objects-normal/x86_64/GraphUtils.o
+t1387330863
+s138164
+
 N/Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/Objects-normal/x86_64/MyGestureRecognition.LinkFileList
-c0000000052A71C5700000000000000B4
-t1386683479
-s180
+c0000000052B0FD2D000000000000036B
+t1387330861
+s875
 
 N/Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/Objects-normal/x86_64/MyGestureRecognition.o
-t1386683480
-s100900
+t1387330863
+s217624
 
-N/Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/Script-97FAA29DA3854081ACDB21CC.sh
-c0000000052A71C5700000000000000F5
-t1386683479
-s245
+N/Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/Objects-normal/x86_64/slic.o
+t1387330863
+s550356
+
+N/Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/slic.cpp
+c0000000052AE8C3C00000000000031D7
+t1387170876
+s12759
+
+CBuild AST from /Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/GestureRecognition.cpp
+r0
+
+CBuild AST from /Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/GestureRecognitionImage.cpp
+r0
+
+CBuild AST from /Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/GraphUtils.cpp
+r0
 
 CBuild AST from /Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/MyGestureRecognition.cpp
 r0
 
+CBuild AST from /Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/slic.cpp
+r0
+
 CCheck dependencies
 r0
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies608fa9d75357b841^46cfa9d75357b841^---0#1#1#--18"Check dependencies36"B992E630-8BA4-4F8C-979E-49108BB09D5C-
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies977187ad3461b841^39b587ad3461b841^---0#1#1#--18"Check dependencies36"5982FD4E-E091-4337-B422-F03713AC1D0F-
+
+CCompileC build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/Objects-normal/x86_64/GestureRecognition.o /Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/GestureRecognition.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s409023663.512258
+e409023664.523802
+r1
+xCompileC
+xbuild/MyGestureRecognition.build/Debug/MyGestureRecognition.build/Objects-normal/x86_64/GestureRecognition.o
+x/Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/GestureRecognition.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/GestureRecognition.cpp
+d/usr/local/include/opencv2/objdetect/objdetect.hpp
+d/usr/local/include/opencv2/core/core.hpp
+d/usr/local/include/opencv2/core/types_c.h
+d/usr/local/include/opencv2/core/version.hpp
+d/usr/local/include/opencv2/core/operations.hpp
+d/usr/local/include/opencv2/core/mat.hpp
+d/usr/local/include/opencv2/highgui/highgui.hpp
+d/usr/local/include/opencv2/highgui/highgui_c.h
+d/usr/local/include/opencv2/core/core_c.h
+d/usr/local/include/opencv2/imgproc/imgproc.hpp
+d/usr/local/include/opencv2/imgproc/types_c.h
+o/Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/GestureRecognition.cpp:175:19: warning: unused variable 'center' [-Wunused-variable]
+o            Point center = Point2d(mom.m10/mom.m00,mom.m01/mom.m00);
+o                  ^
+o/Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/GestureRecognition.cpp:176:22: warning: unused variable 'bRect' [-Wunused-variable]
+o            cv::Rect bRect = cv::boundingRect( cv::Mat(contours[idx]) );
+o                     ^
+o2 warnings generated.
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection99"Compile /Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/GestureRecognition.cpp202"CompileC build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/Objects-normal/x86_64/GestureRecognition.o GestureRecognition.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler8b3683af3461b841^7f1786b03461b841^-514"/Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/GestureRecognition.cpp:175:19: warning: unused variable 'center' [-Wunused-variable]            Point center = Point2d(mom.m10/mom.m00,mom.m01/mom.m00);                  ^/Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/GestureRecognition.cpp:176:22: warning: unused variable 'bRect' [-Wunused-variable]            cv::Rect bRect = cv::boundingRect( cv::Mat(contours[idx]) );                     ^2 warnings generated.2(36%IDEClangDiagnosticActivityLogMessage2@24"Unused variable 'center'-409023664#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@100"file:///Users/yeahugo/Documents/Search/Computer%20Vision/MyGestureRecognition/GestureRecognition.cpp0000000000000000^174#18#174#18#4771#0#19"Unused Entity Issue--2@23"Unused variable 'bRect'-409023664#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@100"file:///Users/yeahugo/Documents/Search/Computer%20Vision/MyGestureRecognition/GestureRecognition.cpp0000000000000000^175#21#175#21#4843#0#19"Unused Entity Issue--0#0#1#-19%DVTDocumentLocation4@100"file:///Users/yeahugo/Documents/Search/Computer%20Vision/MyGestureRecognition/GestureRecognition.cpp0000000000000000^2630"CompileC build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/Objects-normal/x86_64/GestureRecognition.o GestureRecognition.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition"    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.9 -g -Wno-sign-conversion -I/Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/build/Debug/include -I/usr/local/include/opencv -I/usr/local/include -I/Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/DerivedSources/x86_64 -I/Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/build/Debug -MMD -MT dependencies -MF /Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/Objects-normal/x86_64/GestureRecognition.d --serialize-diagnostics /Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/Objects-normal/x86_64/GestureRecognition.dia -c /Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/GestureRecognition.cpp -o /Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/Objects-normal/x86_64/GestureRecognition.o36"B8F316FE-932B-4AFF-9875-27D1B5C5078C-
+b52CE4650-DFE0-4D9C-BA2A-6EF9F7E4A47A
+
+CCompileC build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/Objects-normal/x86_64/GestureRecognitionImage.o /Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/GestureRecognitionImage.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s409023661.531192
+e409023663.646328
+r1
+xCompileC
+xbuild/MyGestureRecognition.build/Debug/MyGestureRecognition.build/Objects-normal/x86_64/GestureRecognitionImage.o
+x/Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/GestureRecognitionImage.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/GestureRecognitionImage.cpp
+d/Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/GestureRecognitionImage.h
+d/usr/local/include/opencv2/highgui/highgui.hpp
+d/usr/local/include/opencv2/core/core.hpp
+d/usr/local/include/opencv2/core/types_c.h
+d/usr/local/include/opencv2/core/version.hpp
+d/usr/local/include/opencv2/core/operations.hpp
+d/usr/local/include/opencv2/core/mat.hpp
+d/usr/local/include/opencv2/highgui/highgui_c.h
+d/usr/local/include/opencv2/core/core_c.h
+d/usr/local/include/opencv2/imgproc/imgproc.hpp
+d/usr/local/include/opencv2/imgproc/types_c.h
+d/Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/slic.h
+d/usr/local/include/opencv/cv.h
+d/usr/local/include/opencv2/imgproc/imgproc_c.h
+d/usr/local/include/opencv2/video/tracking.hpp
+d/usr/local/include/opencv2/features2d/features2d.hpp
+d/usr/local/include/opencv2/flann/miniflann.hpp
+d/usr/local/include/opencv2/flann/defines.h
+d/usr/local/include/opencv2/flann/config.h
+d/usr/local/include/opencv2/flann/flann.hpp
+d/usr/local/include/opencv2/flann/flann_base.hpp
+d/usr/local/include/opencv2/flann/general.h
+d/usr/local/include/opencv2/flann/matrix.h
+d/usr/local/include/opencv2/flann/params.h
+d/usr/local/include/opencv2/flann/any.h
+d/usr/local/include/opencv2/flann/saving.h
+d/usr/local/include/opencv2/flann/nn_index.h
+d/usr/local/include/opencv2/flann/result_set.h
+d/usr/local/include/opencv2/flann/all_indices.h
+d/usr/local/include/opencv2/flann/kdtree_index.h
+d/usr/local/include/opencv2/flann/dynamic_bitset.h
+d/usr/local/include/opencv2/flann/dist.h
+d/usr/local/include/opencv2/flann/heap.h
+d/usr/local/include/opencv2/flann/allocator.h
+d/usr/local/include/opencv2/flann/random.h
+d/usr/local/include/opencv2/flann/kdtree_single_index.h
+d/usr/local/include/opencv2/flann/kmeans_index.h
+d/usr/local/include/opencv2/flann/logger.h
+d/usr/local/include/opencv2/flann/composite_index.h
+d/usr/local/include/opencv2/flann/linear_index.h
+d/usr/local/include/opencv2/flann/hierarchical_clustering_index.h
+d/usr/local/include/opencv2/flann/lsh_index.h
+d/usr/local/include/opencv2/flann/lsh_table.h
+d/usr/local/include/opencv2/flann/autotuned_index.h
+d/usr/local/include/opencv2/flann/ground_truth.h
+d/usr/local/include/opencv2/flann/index_testing.h
+d/usr/local/include/opencv2/flann/timer.h
+d/usr/local/include/opencv2/flann/sampling.h
+d/usr/local/include/opencv2/calib3d/calib3d.hpp
+d/usr/local/include/opencv2/objdetect/objdetect.hpp
+d/usr/local/include/opencv2/legacy/compat.hpp
+d/usr/local/include/opencv2/core/internal.hpp
+d/usr/local/include/opencv/highgui.h
+d/Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/GraphUtils.h
+o/Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/GestureRecognitionImage.cpp:98:9: warning: void function 'caculateOneImage' should not return a value [-Wreturn-type]
+o        return -1;
+o        ^      ~~
+o1 warning generated.
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection104"Compile /Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/GestureRecognitionImage.cpp212"CompileC build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/Objects-normal/x86_64/GestureRecognitionImage.o GestureRecognitionImage.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compilerf81888ad3461b841^0476a5af3461b841^-245"/Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/GestureRecognitionImage.cpp:98:9: warning: void function 'caculateOneImage' should not return a value [-Wreturn-type]        return -1;        ^      ~~1 warning generated.1(36%IDEClangDiagnosticActivityLogMessage2@58"Void function 'caculateOneImage' should not return a value-409023663#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@105"file:///Users/yeahugo/Documents/Search/Computer%20Vision/MyGestureRecognition/GestureRecognitionImage.cpp0000000000000000^97#8#97#8#2287#0#14"Semantic Issue1(3@105"file:///Users/yeahugo/Documents/Search/Computer%20Vision/MyGestureRecognition/GestureRecognitionImage.cpp0000000000000000^97#15#97#17#2294#1#-0#0#1#-19%DVTDocumentLocation4@105"file:///Users/yeahugo/Documents/Search/Computer%20Vision/MyGestureRecognition/GestureRecognitionImage.cpp0000000000000000^2660"CompileC build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/Objects-normal/x86_64/GestureRecognitionImage.o GestureRecognitionImage.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition"    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.9 -g -Wno-sign-conversion -I/Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/build/Debug/include -I/usr/local/include/opencv -I/usr/local/include -I/Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/DerivedSources/x86_64 -I/Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/build/Debug -MMD -MT dependencies -MF /Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/Objects-normal/x86_64/GestureRecognitionImage.d --serialize-diagnostics /Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/Objects-normal/x86_64/GestureRecognitionImage.dia -c /Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/GestureRecognitionImage.cpp -o /Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/Objects-normal/x86_64/GestureRecognitionImage.o36"545E6592-8174-40D5-8B32-2B339B55DE39-
+b52CE4650-DFE0-4D9C-BA2A-6EF9F7E4A47A
+
+CCompileC build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/Objects-normal/x86_64/GraphUtils.o /Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/GraphUtils.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s409023661.530605
+e409023663.511891
+r1
+xCompileC
+xbuild/MyGestureRecognition.build/Debug/MyGestureRecognition.build/Objects-normal/x86_64/GraphUtils.o
+x/Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/GraphUtils.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/GraphUtils.cpp
+d/usr/local/include/opencv/cv.h
+d/usr/local/include/opencv2/core/core_c.h
+d/usr/local/include/opencv2/core/types_c.h
+d/usr/local/include/opencv2/core/core.hpp
+d/usr/local/include/opencv2/core/version.hpp
+d/usr/local/include/opencv2/core/operations.hpp
+d/usr/local/include/opencv2/core/mat.hpp
+d/usr/local/include/opencv2/imgproc/imgproc_c.h
+d/usr/local/include/opencv2/imgproc/types_c.h
+d/usr/local/include/opencv2/imgproc/imgproc.hpp
+d/usr/local/include/opencv2/video/tracking.hpp
+d/usr/local/include/opencv2/features2d/features2d.hpp
+d/usr/local/include/opencv2/flann/miniflann.hpp
+d/usr/local/include/opencv2/flann/defines.h
+d/usr/local/include/opencv2/flann/config.h
+d/usr/local/include/opencv2/flann/flann.hpp
+d/usr/local/include/opencv2/flann/flann_base.hpp
+d/usr/local/include/opencv2/flann/general.h
+d/usr/local/include/opencv2/flann/matrix.h
+d/usr/local/include/opencv2/flann/params.h
+d/usr/local/include/opencv2/flann/any.h
+d/usr/local/include/opencv2/flann/saving.h
+d/usr/local/include/opencv2/flann/nn_index.h
+d/usr/local/include/opencv2/flann/result_set.h
+d/usr/local/include/opencv2/flann/all_indices.h
+d/usr/local/include/opencv2/flann/kdtree_index.h
+d/usr/local/include/opencv2/flann/dynamic_bitset.h
+d/usr/local/include/opencv2/flann/dist.h
+d/usr/local/include/opencv2/flann/heap.h
+d/usr/local/include/opencv2/flann/allocator.h
+d/usr/local/include/opencv2/flann/random.h
+d/usr/local/include/opencv2/flann/kdtree_single_index.h
+d/usr/local/include/opencv2/flann/kmeans_index.h
+d/usr/local/include/opencv2/flann/logger.h
+d/usr/local/include/opencv2/flann/composite_index.h
+d/usr/local/include/opencv2/flann/linear_index.h
+d/usr/local/include/opencv2/flann/hierarchical_clustering_index.h
+d/usr/local/include/opencv2/flann/lsh_index.h
+d/usr/local/include/opencv2/flann/lsh_table.h
+d/usr/local/include/opencv2/flann/autotuned_index.h
+d/usr/local/include/opencv2/flann/ground_truth.h
+d/usr/local/include/opencv2/flann/index_testing.h
+d/usr/local/include/opencv2/flann/timer.h
+d/usr/local/include/opencv2/flann/sampling.h
+d/usr/local/include/opencv2/calib3d/calib3d.hpp
+d/usr/local/include/opencv2/objdetect/objdetect.hpp
+d/usr/local/include/opencv2/legacy/compat.hpp
+d/usr/local/include/opencv2/core/internal.hpp
+d/usr/local/include/opencv/cxcore.h
+d/usr/local/include/opencv/highgui.h
+d/usr/local/include/opencv2/highgui/highgui_c.h
+d/usr/local/include/opencv2/highgui/highgui.hpp
+d/Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/GraphUtils.h
+o/Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/GraphUtils.cpp:406:10: warning: conversion from string literal to 'char *' is deprecated [-Wdeprecated-writable-strings]
+o                name = "Image";
+o                       ^
+o1 warning generated.
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection91"Compile /Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/GraphUtils.cpp186"CompileC build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/Objects-normal/x86_64/GraphUtils.o GraphUtils.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler91f287ad3461b841^990c83af3461b841^-268"/Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/GraphUtils.cpp:406:10: warning: conversion from string literal to 'char *' is deprecated [-Wdeprecated-writable-strings]                name = "Image";                       ^1 warning generated.1(36%IDEClangDiagnosticActivityLogMessage2@56"Conversion from string literal to 'char *' is deprecated-409023663#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@92"file:///Users/yeahugo/Documents/Search/Computer%20Vision/MyGestureRecognition/GraphUtils.cpp0000000000000000^405#9#405#9#14707#0#14"Semantic Issue--0#0#1#-19%DVTDocumentLocation4@92"file:///Users/yeahugo/Documents/Search/Computer%20Vision/MyGestureRecognition/GraphUtils.cpp0000000000000000^2582"CompileC build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/Objects-normal/x86_64/GraphUtils.o GraphUtils.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition"    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.9 -g -Wno-sign-conversion -I/Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/build/Debug/include -I/usr/local/include/opencv -I/usr/local/include -I/Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/DerivedSources/x86_64 -I/Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/build/Debug -MMD -MT dependencies -MF /Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/Objects-normal/x86_64/GraphUtils.d --serialize-diagnostics /Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/Objects-normal/x86_64/GraphUtils.dia -c /Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/GraphUtils.cpp -o /Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/Objects-normal/x86_64/GraphUtils.o36"92B2AA8B-8334-4271-AD97-0E3B1D23AA98-
+b52CE4650-DFE0-4D9C-BA2A-6EF9F7E4A47A
 
 CCompileC build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/Objects-normal/x86_64/MyGestureRecognition.o /Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/MyGestureRecognition.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s408376279.663808
-e408376280.639814
+s409023661.532194
+e409023663.594114
 r1
 xCompileC
 xbuild/MyGestureRecognition.build/Debug/MyGestureRecognition.build/Objects-normal/x86_64/MyGestureRecognition.o
@@ -114,19 +338,90 @@ o/Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/MyGestureR
 ostatic void detectTest(const HOGDescriptor& hog, Mat& imageData) {
 o            ^
 o3 warnings generated.
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection101"Compile /Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/MyGestureRecognition.cpp206"CompileC build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/Objects-normal/x86_64/MyGestureRecognition.o MyGestureRecognition.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler0401aad75357b841^75caa3d85357b841^-1774"In file included from /Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/MyGestureRecognition.cpp:1:In file included from /usr/local/include/opencv2/opencv.hpp:56:/usr/local/include/opencv2/ml/ml.hpp:957:18: warning: 'CvForestTree::train' hides overloaded virtual functions [-Woverloaded-virtual]    virtual bool train( CvDTreeTrainData* trainData, const CvMat* _subsample_idx, CvRTrees* forest );                 ^/usr/local/include/opencv2/ml/ml.hpp:863:18: note: hidden overloaded virtual function 'CvDTree::train' declared here    virtual bool train( CvMLData* trainData, CvDTreeParams params=CvDTreeParams() );                 ^/usr/local/include/opencv2/ml/ml.hpp:873:26: note: hidden overloaded virtual function 'CvDTree::train' declared here    CV_WRAP virtual bool train( const cv::Mat& trainData, int tflag,                         ^/usr/local/include/opencv2/ml/ml.hpp:1145:18: warning: 'CvBoostTree::train' hides overloaded virtual functions [-Woverloaded-virtual]    virtual bool train( CvDTreeTrainData* trainData,                 ^/usr/local/include/opencv2/ml/ml.hpp:863:18: note: hidden overloaded virtual function 'CvDTree::train' declared here    virtual bool train( CvMLData* trainData, CvDTreeParams params=CvDTreeParams() );                 ^/usr/local/include/opencv2/ml/ml.hpp:873:26: note: hidden overloaded virtual function 'CvDTree::train' declared here    CV_WRAP virtual bool train( const cv::Mat& trainData, int tflag,                         ^/Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/MyGestureRecognition.cpp:27:13: warning: unused function 'detectTest' [-Wunused-function]static void detectTest(const HOGDescriptor& hog, Mat& imageData) {            ^3 warnings generated.3(36%IDEClangDiagnosticActivityLogMessage2@56"'CvForestTree::train' hides overloaded virtual functions-408376280#18446744073709551615#0#4(2@118"In file included from /Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/MyGestureRecognition.cpp:1:-408376280#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@102"file:///Users/yeahugo/Documents/Search/Computer%20Vision/MyGestureRecognition/MyGestureRecognition.cpp0000000000000000^0#9#0#9#9#0#21"Apple LLVM 5.0 Notice--2@63"In file included from /usr/local/include/opencv2/opencv.hpp:56:-408376280#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@44"file:///usr/local/include/opencv2/opencv.hpp0000000000000000^55#9#55#9#2606#0#21"Apple LLVM 5.0 Notice--2@65"Hidden overloaded virtual function 'CvDTree::train' declared here-408376280#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@43"file:///usr/local/include/opencv2/ml/ml.hpp0000000000000000^862#17#862#17#30742#0#14"Semantic Issue--2@65"Hidden overloaded virtual function 'CvDTree::train' declared here-408376280#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@43"file:///usr/local/include/opencv2/ml/ml.hpp0000000000000000^872#25#872#25#31220#0#14"Semantic Issue--1#27"com.apple.dt.IDE.diagnostic3@43"file:///usr/local/include/opencv2/ml/ml.hpp0000000000000000^956#17#956#17#35039#0#14"Semantic Issue--2@55"'CvBoostTree::train' hides overloaded virtual functions-408376280#18446744073709551615#0#4(2@118"In file included from /Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/MyGestureRecognition.cpp:1:-408376280#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@102"file:///Users/yeahugo/Documents/Search/Computer%20Vision/MyGestureRecognition/MyGestureRecognition.cpp0000000000000000^0#9#0#9#9#0#21"Apple LLVM 5.0 Notice--2@63"In file included from /usr/local/include/opencv2/opencv.hpp:56:-408376280#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@44"file:///usr/local/include/opencv2/opencv.hpp0000000000000000^55#9#55#9#2606#0#21"Apple LLVM 5.0 Notice--2@65"Hidden overloaded virtual function 'CvDTree::train' declared here-408376280#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@43"file:///usr/local/include/opencv2/ml/ml.hpp0000000000000000^862#17#862#17#30742#0#14"Semantic Issue--2@65"Hidden overloaded virtual function 'CvDTree::train' declared here-408376280#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@43"file:///usr/local/include/opencv2/ml/ml.hpp0000000000000000^872#25#872#25#31220#0#14"Semantic Issue--1#27"com.apple.dt.IDE.diagnostic3@43"file:///usr/local/include/opencv2/ml/ml.hpp0000000000000000^1144#17#1144#17#43137#0#14"Semantic Issue--2@28"Unused function 'detectTest'-408376280#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@102"file:///Users/yeahugo/Documents/Search/Computer%20Vision/MyGestureRecognition/MyGestureRecognition.cpp0000000000000000^26#12#26#12#703#0#19"Unused Entity Issue--0#0#1#-19%DVTDocumentLocation4@102"file:///Users/yeahugo/Documents/Search/Computer%20Vision/MyGestureRecognition/MyGestureRecognition.cpp0000000000000000^2642"CompileC build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/Objects-normal/x86_64/MyGestureRecognition.o MyGestureRecognition.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition"    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.9 -g -Wno-sign-conversion -I/Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/build/Debug/include -I/usr/local/include/opencv -I/usr/local/include -I/Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/DerivedSources/x86_64 -I/Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/build/Debug -MMD -MT dependencies -MF /Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/Objects-normal/x86_64/MyGestureRecognition.d --serialize-diagnostics /Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/Objects-normal/x86_64/MyGestureRecognition.dia -c /Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/MyGestureRecognition.cpp -o /Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/Objects-normal/x86_64/MyGestureRecognition.o36"1A7EB62E-5CEA-4744-A911-6BC7B301512C-
-bFA0477F1-86EC-4169-8CA1-C713D01587C4
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection101"Compile /Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/MyGestureRecognition.cpp206"CompileC build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/Objects-normal/x86_64/MyGestureRecognition.o MyGestureRecognition.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler085788ad3461b841^b91798af3461b841^-1774"In file included from /Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/MyGestureRecognition.cpp:1:In file included from /usr/local/include/opencv2/opencv.hpp:56:/usr/local/include/opencv2/ml/ml.hpp:957:18: warning: 'CvForestTree::train' hides overloaded virtual functions [-Woverloaded-virtual]    virtual bool train( CvDTreeTrainData* trainData, const CvMat* _subsample_idx, CvRTrees* forest );                 ^/usr/local/include/opencv2/ml/ml.hpp:863:18: note: hidden overloaded virtual function 'CvDTree::train' declared here    virtual bool train( CvMLData* trainData, CvDTreeParams params=CvDTreeParams() );                 ^/usr/local/include/opencv2/ml/ml.hpp:873:26: note: hidden overloaded virtual function 'CvDTree::train' declared here    CV_WRAP virtual bool train( const cv::Mat& trainData, int tflag,                         ^/usr/local/include/opencv2/ml/ml.hpp:1145:18: warning: 'CvBoostTree::train' hides overloaded virtual functions [-Woverloaded-virtual]    virtual bool train( CvDTreeTrainData* trainData,                 ^/usr/local/include/opencv2/ml/ml.hpp:863:18: note: hidden overloaded virtual function 'CvDTree::train' declared here    virtual bool train( CvMLData* trainData, CvDTreeParams params=CvDTreeParams() );                 ^/usr/local/include/opencv2/ml/ml.hpp:873:26: note: hidden overloaded virtual function 'CvDTree::train' declared here    CV_WRAP virtual bool train( const cv::Mat& trainData, int tflag,                         ^/Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/MyGestureRecognition.cpp:27:13: warning: unused function 'detectTest' [-Wunused-function]static void detectTest(const HOGDescriptor& hog, Mat& imageData) {            ^3 warnings generated.3(36%IDEClangDiagnosticActivityLogMessage2@56"'CvForestTree::train' hides overloaded virtual functions-409023663#18446744073709551615#0#4(2@118"In file included from /Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/MyGestureRecognition.cpp:1:-409023663#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@102"file:///Users/yeahugo/Documents/Search/Computer%20Vision/MyGestureRecognition/MyGestureRecognition.cpp0000000000000000^0#9#0#9#9#0#21"Apple LLVM 5.0 Notice--2@63"In file included from /usr/local/include/opencv2/opencv.hpp:56:-409023663#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@44"file:///usr/local/include/opencv2/opencv.hpp0000000000000000^55#9#55#9#2606#0#21"Apple LLVM 5.0 Notice--2@65"Hidden overloaded virtual function 'CvDTree::train' declared here-409023663#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@43"file:///usr/local/include/opencv2/ml/ml.hpp0000000000000000^862#17#862#17#30742#0#14"Semantic Issue--2@65"Hidden overloaded virtual function 'CvDTree::train' declared here-409023663#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@43"file:///usr/local/include/opencv2/ml/ml.hpp0000000000000000^872#25#872#25#31220#0#14"Semantic Issue--1#27"com.apple.dt.IDE.diagnostic3@43"file:///usr/local/include/opencv2/ml/ml.hpp0000000000000000^956#17#956#17#35039#0#14"Semantic Issue--2@55"'CvBoostTree::train' hides overloaded virtual functions-409023663#18446744073709551615#0#4(2@118"In file included from /Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/MyGestureRecognition.cpp:1:-409023663#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@102"file:///Users/yeahugo/Documents/Search/Computer%20Vision/MyGestureRecognition/MyGestureRecognition.cpp0000000000000000^0#9#0#9#9#0#21"Apple LLVM 5.0 Notice--2@63"In file included from /usr/local/include/opencv2/opencv.hpp:56:-409023663#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@44"file:///usr/local/include/opencv2/opencv.hpp0000000000000000^55#9#55#9#2606#0#21"Apple LLVM 5.0 Notice--2@65"Hidden overloaded virtual function 'CvDTree::train' declared here-409023663#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@43"file:///usr/local/include/opencv2/ml/ml.hpp0000000000000000^862#17#862#17#30742#0#14"Semantic Issue--2@65"Hidden overloaded virtual function 'CvDTree::train' declared here-409023663#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@43"file:///usr/local/include/opencv2/ml/ml.hpp0000000000000000^872#25#872#25#31220#0#14"Semantic Issue--1#27"com.apple.dt.IDE.diagnostic3@43"file:///usr/local/include/opencv2/ml/ml.hpp0000000000000000^1144#17#1144#17#43137#0#14"Semantic Issue--2@28"Unused function 'detectTest'-409023663#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@102"file:///Users/yeahugo/Documents/Search/Computer%20Vision/MyGestureRecognition/MyGestureRecognition.cpp0000000000000000^26#12#26#12#703#0#19"Unused Entity Issue--0#0#1#-19%DVTDocumentLocation4@102"file:///Users/yeahugo/Documents/Search/Computer%20Vision/MyGestureRecognition/MyGestureRecognition.cpp0000000000000000^2642"CompileC build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/Objects-normal/x86_64/MyGestureRecognition.o MyGestureRecognition.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition"    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.9 -g -Wno-sign-conversion -I/Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/build/Debug/include -I/usr/local/include/opencv -I/usr/local/include -I/Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/DerivedSources/x86_64 -I/Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/build/Debug -MMD -MT dependencies -MF /Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/Objects-normal/x86_64/MyGestureRecognition.d --serialize-diagnostics /Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/Objects-normal/x86_64/MyGestureRecognition.dia -c /Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/MyGestureRecognition.cpp -o /Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/Objects-normal/x86_64/MyGestureRecognition.o36"B6B6430A-F3E5-440F-8B98-14115120C32E-
+b52CE4650-DFE0-4D9C-BA2A-6EF9F7E4A47A
+
+CCompileC build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/Objects-normal/x86_64/slic.o /Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/slic.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s409023661.530896
+e409023663.882190
+r1
+xCompileC
+xbuild/MyGestureRecognition.build/Debug/MyGestureRecognition.build/Objects-normal/x86_64/slic.o
+x/Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/slic.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/slic.cpp
+d/Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/slic.h
+d/usr/local/include/opencv/cv.h
+d/usr/local/include/opencv2/core/core_c.h
+d/usr/local/include/opencv2/core/types_c.h
+d/usr/local/include/opencv2/core/core.hpp
+d/usr/local/include/opencv2/core/version.hpp
+d/usr/local/include/opencv2/core/operations.hpp
+d/usr/local/include/opencv2/core/mat.hpp
+d/usr/local/include/opencv2/imgproc/imgproc_c.h
+d/usr/local/include/opencv2/imgproc/types_c.h
+d/usr/local/include/opencv2/imgproc/imgproc.hpp
+d/usr/local/include/opencv2/video/tracking.hpp
+d/usr/local/include/opencv2/features2d/features2d.hpp
+d/usr/local/include/opencv2/flann/miniflann.hpp
+d/usr/local/include/opencv2/flann/defines.h
+d/usr/local/include/opencv2/flann/config.h
+d/usr/local/include/opencv2/flann/flann.hpp
+d/usr/local/include/opencv2/flann/flann_base.hpp
+d/usr/local/include/opencv2/flann/general.h
+d/usr/local/include/opencv2/flann/matrix.h
+d/usr/local/include/opencv2/flann/params.h
+d/usr/local/include/opencv2/flann/any.h
+d/usr/local/include/opencv2/flann/saving.h
+d/usr/local/include/opencv2/flann/nn_index.h
+d/usr/local/include/opencv2/flann/result_set.h
+d/usr/local/include/opencv2/flann/all_indices.h
+d/usr/local/include/opencv2/flann/kdtree_index.h
+d/usr/local/include/opencv2/flann/dynamic_bitset.h
+d/usr/local/include/opencv2/flann/dist.h
+d/usr/local/include/opencv2/flann/heap.h
+d/usr/local/include/opencv2/flann/allocator.h
+d/usr/local/include/opencv2/flann/random.h
+d/usr/local/include/opencv2/flann/kdtree_single_index.h
+d/usr/local/include/opencv2/flann/kmeans_index.h
+d/usr/local/include/opencv2/flann/logger.h
+d/usr/local/include/opencv2/flann/composite_index.h
+d/usr/local/include/opencv2/flann/linear_index.h
+d/usr/local/include/opencv2/flann/hierarchical_clustering_index.h
+d/usr/local/include/opencv2/flann/lsh_index.h
+d/usr/local/include/opencv2/flann/lsh_table.h
+d/usr/local/include/opencv2/flann/autotuned_index.h
+d/usr/local/include/opencv2/flann/ground_truth.h
+d/usr/local/include/opencv2/flann/index_testing.h
+d/usr/local/include/opencv2/flann/timer.h
+d/usr/local/include/opencv2/flann/sampling.h
+d/usr/local/include/opencv2/calib3d/calib3d.hpp
+d/usr/local/include/opencv2/objdetect/objdetect.hpp
+d/usr/local/include/opencv2/legacy/compat.hpp
+d/usr/local/include/opencv2/core/internal.hpp
+d/usr/local/include/opencv/highgui.h
+d/usr/local/include/opencv2/highgui/highgui_c.h
+d/usr/local/include/opencv2/highgui/highgui.hpp
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection85"Compile /Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/slic.cpp174"CompileC build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/Objects-normal/x86_64/slic.o slic.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compilerff0788ad3461b841^98c3e2af3461b841^---0#0#1#-19%DVTDocumentLocation2@86"file:///Users/yeahugo/Documents/Search/Computer%20Vision/MyGestureRecognition/slic.cpp0000000000000000^2546"CompileC build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/Objects-normal/x86_64/slic.o slic.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition"    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.9 -g -Wno-sign-conversion -I/Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/build/Debug/include -I/usr/local/include/opencv -I/usr/local/include -I/Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/DerivedSources/x86_64 -I/Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/build/Debug -MMD -MT dependencies -MF /Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/Objects-normal/x86_64/slic.d --serialize-diagnostics /Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/Objects-normal/x86_64/slic.dia -c /Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/slic.cpp -o /Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/Objects-normal/x86_64/slic.o36"A5DC5FE6-931E-4A6C-9495-8EE1D0A2F2B8-
+b52CE4650-DFE0-4D9C-BA2A-6EF9F7E4A47A
 
 CLd /Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/build/Debug/MyGestureRecognition normal x86_64
-s408376280.640473
-e408376280.702012
-r1
+s409023664.524572
+e409023664.556121
+r0
 xLd
 x/Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/build/Debug/MyGestureRecognition
 xnormal
 xx86_64
 d/Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/Objects-normal/x86_64/MyGestureRecognition.LinkFileList
+d/Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/Objects-normal/x86_64/GraphUtils.o
+d/Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/Objects-normal/x86_64/slic.o
+d/Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/Objects-normal/x86_64/GestureRecognitionImage.o
 d/Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/Objects-normal/x86_64/MyGestureRecognition.o
+d/Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/Objects-normal/x86_64/GestureRecognition.o
 d/usr/local/lib/libopencv_videostab.2.4.7.dylib
 d/usr/local/lib/libopencv_video.2.4.7.dylib
 d/usr/local/lib/libopencv_ts.a
@@ -179,20 +474,17 @@ d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/
 d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libunc.dylib
 d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libunwind.dylib
 d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libxpc.dylib
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection106"Link /Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/build/Debug/MyGestureRecognition49"Ld build/Debug/MyGestureRecognition normal x86_640307a4d85357b841^6fb8b3d85357b841^---0#0#1#--2622"Ld build/Debug/MyGestureRecognition normal x86_64    cd "/Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition"    setenv MACOSX_DEPLOYMENT_TARGET 10.9    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -L/Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/build/Debug -F/Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/build/Debug -filelist /Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/Objects-normal/x86_64/MyGestureRecognition.LinkFileList -mmacosx-version-min=10.9 -Wl,-search_paths_first -Wl,-headerpad_max_install_names /usr/local/lib/libopencv_videostab.2.4.7.dylib /usr/local/lib/libopencv_video.2.4.7.dylib /usr/local/lib/libopencv_ts.a /usr/local/lib/libopencv_superres.2.4.7.dylib /usr/local/lib/libopencv_stitching.2.4.7.dylib /usr/local/lib/libopencv_photo.2.4.7.dylib /usr/local/lib/libopencv_ocl.2.4.7.dylib /usr/local/lib/libopencv_objdetect.2.4.7.dylib /usr/local/lib/libopencv_nonfree.2.4.7.dylib /usr/local/lib/libopencv_ml.2.4.7.dylib /usr/local/lib/libopencv_legacy.2.4.7.dylib /usr/local/lib/libopencv_imgproc.2.4.7.dylib /usr/local/lib/libopencv_highgui.2.4.7.dylib /usr/local/lib/libopencv_gpu.2.4.7.dylib /usr/local/lib/libopencv_flann.2.4.7.dylib /usr/local/lib/libopencv_features2d.2.4.7.dylib /usr/local/lib/libopencv_core.2.4.7.dylib /usr/local/lib/libopencv_contrib.2.4.7.dylib /usr/local/lib/libopencv_calib3d.2.4.7.dylib /usr/local/lib/libopencv_nonfree.2.4.7.dylib /usr/local/lib/libopencv_ocl.2.4.7.dylib /usr/local/lib/libopencv_gpu.2.4.7.dylib /usr/local/lib/libopencv_photo.2.4.7.dylib /usr/local/lib/libopencv_objdetect.2.4.7.dylib /usr/local/lib/libopencv_legacy.2.4.7.dylib /usr/local/lib/libopencv_video.2.4.7.dylib /usr/local/lib/libopencv_ml.2.4.7.dylib /usr/local/lib/libopencv_calib3d.2.4.7.dylib /usr/local/lib/libopencv_features2d.2.4.7.dylib /usr/local/lib/libopencv_highgui.2.4.7.dylib /usr/local/lib/libopencv_imgproc.2.4.7.dylib /usr/local/lib/libopencv_flann.2.4.7.dylib /usr/local/lib/libopencv_core.2.4.7.dylib -Xlinker -dependency_info -Xlinker /Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/Objects-normal/x86_64/MyGestureRecognition_dependency_info.dat -o /Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/build/Debug/MyGestureRecognition36"A373D325-F63A-4533-9FA0-A6322A6C388D-
-bFA0477F1-86EC-4169-8CA1-C713D01587C4
+oduplicate symbol _face_cascade_name in:
+o    /Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/Objects-normal/x86_64/GestureRecognitionImage.o
+o    /Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/Objects-normal/x86_64/GestureRecognition.o
+oduplicate symbol _eyes_cascade_name in:
+o    /Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/Objects-normal/x86_64/GestureRecognitionImage.o
+o    /Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/Objects-normal/x86_64/GestureRecognition.o
+old: 2 duplicate symbols for architecture x86_64
+oclang: error: linker command failed with exit code 1 (use -v to see invocation)
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection106"Link /Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/build/Debug/MyGestureRecognition49"Ld build/Debug/MyGestureRecognition normal x86_64d15986b03461b841^575e8eb03461b841^-946"duplicate symbol _face_cascade_name in:    /Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/Objects-normal/x86_64/GestureRecognitionImage.o    /Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/Objects-normal/x86_64/GestureRecognition.oduplicate symbol _eyes_cascade_name in:    /Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/Objects-normal/x86_64/GestureRecognitionImage.o    /Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/Objects-normal/x86_64/GestureRecognition.old: 2 duplicate symbols for architecture x86_64clang: error: linker command failed with exit code 1 (use -v to see invocation)2(21%IDEActivityLogMessage2@43"2 duplicate symbols for architecture x86_64-409023664#818#48#-0#-23%DVTTextDocumentLocation3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#31"Apple Mach-O Linker (ld) Notice--2@65"Linker command failed with exit code 1 (use -v to see invocation)-409023664#866#80#-2#-3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#30"Apple Mach-O Linker (ld) Error--0#0#1#--2622"Ld build/Debug/MyGestureRecognition normal x86_64    cd "/Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition"    setenv MACOSX_DEPLOYMENT_TARGET 10.9    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -L/Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/build/Debug -F/Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/build/Debug -filelist /Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/Objects-normal/x86_64/MyGestureRecognition.LinkFileList -mmacosx-version-min=10.9 -Wl,-search_paths_first -Wl,-headerpad_max_install_names /usr/local/lib/libopencv_videostab.2.4.7.dylib /usr/local/lib/libopencv_video.2.4.7.dylib /usr/local/lib/libopencv_ts.a /usr/local/lib/libopencv_superres.2.4.7.dylib /usr/local/lib/libopencv_stitching.2.4.7.dylib /usr/local/lib/libopencv_photo.2.4.7.dylib /usr/local/lib/libopencv_ocl.2.4.7.dylib /usr/local/lib/libopencv_objdetect.2.4.7.dylib /usr/local/lib/libopencv_nonfree.2.4.7.dylib /usr/local/lib/libopencv_ml.2.4.7.dylib /usr/local/lib/libopencv_legacy.2.4.7.dylib /usr/local/lib/libopencv_imgproc.2.4.7.dylib /usr/local/lib/libopencv_highgui.2.4.7.dylib /usr/local/lib/libopencv_gpu.2.4.7.dylib /usr/local/lib/libopencv_flann.2.4.7.dylib /usr/local/lib/libopencv_features2d.2.4.7.dylib /usr/local/lib/libopencv_core.2.4.7.dylib /usr/local/lib/libopencv_contrib.2.4.7.dylib /usr/local/lib/libopencv_calib3d.2.4.7.dylib /usr/local/lib/libopencv_nonfree.2.4.7.dylib /usr/local/lib/libopencv_ocl.2.4.7.dylib /usr/local/lib/libopencv_gpu.2.4.7.dylib /usr/local/lib/libopencv_photo.2.4.7.dylib /usr/local/lib/libopencv_objdetect.2.4.7.dylib /usr/local/lib/libopencv_legacy.2.4.7.dylib /usr/local/lib/libopencv_video.2.4.7.dylib /usr/local/lib/libopencv_ml.2.4.7.dylib /usr/local/lib/libopencv_calib3d.2.4.7.dylib /usr/local/lib/libopencv_features2d.2.4.7.dylib /usr/local/lib/libopencv_highgui.2.4.7.dylib /usr/local/lib/libopencv_imgproc.2.4.7.dylib /usr/local/lib/libopencv_flann.2.4.7.dylib /usr/local/lib/libopencv_core.2.4.7.dylib -Xlinker -dependency_info -Xlinker /Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/Objects-normal/x86_64/MyGestureRecognition_dependency_info.dat -o /Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/build/Debug/MyGestureRecognition36"4B22D1B2-3347-446A-89EE-80CAB51017B6-
+b52CE4650-DFE0-4D9C-BA2A-6EF9F7E4A47A
 
 CPhaseScriptExecution CMake\ PostBuild\ Rules /Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/Script-97FAA29DA3854081ACDB21CC.sh
-s408376280.703408
-e408376280.728625
-r1
-xPhaseScriptExecution
-xCMake PostBuild Rules
-x/Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/Script-97FAA29DA3854081ACDB21CC.sh
-oecho "Depend check for xcode"
-oDepend check for xcode
-ocd /Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/build && make -C /Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/build -f /Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/build/CMakeScripts/XCODE_DEPEND_HELPER.make PostBuild.MyGestureRecognition.Debug
-omake[1]: Nothing to be done for `PostBuild.MyGestureRecognition.Debug'.
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection47"Run custom shell script 'CMake PostBuild Rules'145"PhaseScriptExecution CMake\ PostBuild\ Rules build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/Script-97FAA29DA3854081ACDB21CC.shdc68b4d85357b841^0588bad85357b841^-445"echo "Depend check for xcode"Depend check for xcodecd /Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/build && make -C /Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/build -f /Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/build/CMakeScripts/XCODE_DEPEND_HELPER.make PostBuild.MyGestureRecognition.Debugmake[1]: Nothing to be done for `PostBuild.MyGestureRecognition.Debug'.4(21%IDEActivityLogMessage2@30"echo "Depend check for xcode"-408376280#0#30#-0#-----2@23"Depend check for xcode-408376280#30#23#-0#-----2@320"cd /Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/build && make -C /Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/build -f /Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/build/CMakeScripts/XCODE_DEPEND_HELPER.make PostBuild.MyGestureRecognition.Debug-408376280#53#320#-0#-----2@72"make[1]: Nothing to be done for `PostBuild.MyGestureRecognition.Debug'.-408376280#373#72#-0#-----0#0#1#--414"PhaseScriptExecution CMake\ PostBuild\ Rules build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/Script-97FAA29DA3854081ACDB21CC.sh    cd "/Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition"    /bin/sh -c \"/Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/build/MyGestureRecognition.build/Debug/MyGestureRecognition.build/Script-97FAA29DA3854081ACDB21CC.sh\"36"959F1EC1-8255-42C2-A44E-51B5C9C7507F-
-bFA0477F1-86EC-4169-8CA1-C713D01587C4
+r0
 

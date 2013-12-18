@@ -36,6 +36,9 @@
 /* Begin PBXBuildFile section */
 		8F17286B0D264A8585896819 /* MyGestureRecognition.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 307425C913DA48BCA52B4BD4 /* MyGestureRecognition.cpp */; settings = {COMPILER_FLAGS = ""; }; };
 		D53D0554185BF5C500CA655F /* GestureRecognition.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D53D0552185BF5C500CA655F /* GestureRecognition.cpp */; };
+		D53D0557185EB4B700CA655F /* GestureRecognitionImage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D53D0555185EB4B700CA655F /* GestureRecognitionImage.cpp */; };
+		D53D055A185EC42500CA655F /* slic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D53D0558185EC42500CA655F /* slic.cpp */; };
+		D53D0563185F0D8700CA655F /* GraphUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D53D0561185F0D8700CA655F /* GraphUtils.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +64,12 @@
 		928B42E079504A51B65AFD46 /* CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
 		D53D0552185BF5C500CA655F /* GestureRecognition.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GestureRecognition.cpp; sourceTree = "<group>"; };
 		D53D0553185BF5C500CA655F /* GestureRecognition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GestureRecognition.h; sourceTree = "<group>"; };
+		D53D0555185EB4B700CA655F /* GestureRecognitionImage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GestureRecognitionImage.cpp; sourceTree = "<group>"; };
+		D53D0556185EB4B700CA655F /* GestureRecognitionImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GestureRecognitionImage.h; sourceTree = "<group>"; };
+		D53D0558185EC42500CA655F /* slic.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = slic.cpp; sourceTree = "<group>"; };
+		D53D0559185EC42500CA655F /* slic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = slic.h; sourceTree = "<group>"; };
+		D53D0561185F0D8700CA655F /* GraphUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GraphUtils.cpp; sourceTree = "<group>"; };
+		D53D0562185F0D8700CA655F /* GraphUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphUtils.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -77,9 +86,15 @@
 		3AE8D0E761BC4B88BCB794E7 /* Source Files */ = {
 			isa = PBXGroup;
 			children = (
+				D53D0561185F0D8700CA655F /* GraphUtils.cpp */,
+				D53D0562185F0D8700CA655F /* GraphUtils.h */,
+				D53D0558185EC42500CA655F /* slic.cpp */,
+				D53D0559185EC42500CA655F /* slic.h */,
 				307425C913DA48BCA52B4BD4 /* MyGestureRecognition.cpp */,
 				D53D0552185BF5C500CA655F /* GestureRecognition.cpp */,
 				D53D0553185BF5C500CA655F /* GestureRecognition.h */,
+				D53D0555185EB4B700CA655F /* GestureRecognitionImage.cpp */,
+				D53D0556185EB4B700CA655F /* GestureRecognitionImage.h */,
 			);
 			name = "Source Files";
 			sourceTree = "<group>";
@@ -236,6 +251,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D53D0563185F0D8700CA655F /* GraphUtils.cpp in Sources */,
+				D53D055A185EC42500CA655F /* slic.cpp in Sources */,
+				D53D0557185EB4B700CA655F /* GestureRecognitionImage.cpp in Sources */,
 				8F17286B0D264A8585896819 /* MyGestureRecognition.cpp in Sources */,
 				D53D0554185BF5C500CA655F /* GestureRecognition.cpp in Sources */,
 			);
@@ -357,6 +375,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_CXX_LIBRARY = "compiler-default";
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk;
 				SYMROOT = "/Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/build/build";
@@ -547,6 +566,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_CXX_LIBRARY = "compiler-default";
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk;
 				SYMROOT = "/Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/build/build";
@@ -693,6 +713,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_CXX_LIBRARY = "compiler-default";
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk;
 				SYMROOT = "/Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/build/build";
@@ -759,6 +780,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_CXX_LIBRARY = "compiler-default";
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk;
 				SYMROOT = "/Users/yeahugo/Documents/Search/Computer Vision/MyGestureRecognition/build/build";
