@@ -22,11 +22,15 @@
 using namespace cv;
 using namespace std;
 
-struct contourPoint
+struct ContourPoint
 {
     int index;
+    float angle;
     float value;
     float derivative;
+    float dotValue;
+    float crossValue;
+    int isUsed;
 } ;
 
 string dirString = "hand/";
@@ -142,7 +146,8 @@ void skinExtract(const Mat &frame, Mat &skinArea)
     cv::drawContours(copyContour, contours, index, color,CV_FILLED,8,hierarchy);
     
     cv::Rect bRect = cv::boundingRect( cv::Mat(contours[index]) );
-    contourMat = skinArea(bRect);
+    contourMat = skinArea;
+//    contourMat = skinArea(bRect);
     blur( contourMat, contourMat, Size(3,3) );
     Canny(contourMat, contourMat, 50, 150, 3);
     contour = contours[index];
@@ -197,120 +202,244 @@ int findFace(Mat frame)
     return returnResult;
 }
 
+bool lessValue(const ContourPoint &p1,const ContourPoint &p2)
+{
+    return p1.value > p2.value;
+}
+
+bool compareDotValue(const ContourPoint &p1,const ContourPoint &p2)
+{
+    return p1.dotValue < p2.dotValue;
+}
+
+bool compareCrossValue(const ContourPoint &p1,const ContourPoint &p2)
+{
+    return p1.crossValue > p2.crossValue;
+}
+
+bool compareAngle(const ContourPoint &p1,const ContourPoint &p2)
+{
+    return p1.angle > p2.angle;
+}
+
+bool compareDistance(const ContourPoint  &p1,const ContourPoint &p2)
+{
+    return p1.value > p2.value;
+}
+
+bool findFingerPoints(map<int,ContourPoint> *contourPoints,int peakIndex)
+{
+    ContourPoint peakPoint = (*contourPoints)[peakIndex];
+    int upPointNum = 30;
+    int upPointNumThreshold = upPointNum * 0.9;
+    
+    int upPointCount = 0;
+    for (int i = 0; i < upPointNum; i++) {
+        int leftIndex = peakPoint.index - i;
+        ContourPoint leftPoint;
+        if (leftIndex < 0) {
+            leftIndex = contourPoints->size()-i;
+        }
+        leftPoint = (*contourPoints)[leftIndex];
+        if (leftPoint.derivative > 0) {
+            upPointCount ++;
+        }
+    }
+    
+    int downPointNum = 20;
+    int downPointNumThreshold = downPointNum * 0.9;
+    
+    int downPointCount = 0;
+    for (int i = 0; i< downPointNum; i++) {
+        int rightIndex = peakPoint.index + i;
+        ContourPoint rightPoint = (*contourPoints)[rightIndex];
+        if (rightPoint.derivative < 0) {
+            downPointCount ++;
+        }
+    }
+    
+    bool findFingerResult = false;
+    if (upPointCount >= upPointNumThreshold && downPointCount >= downPointNumThreshold) {
+        printf("peakCount is %d\n",peakIndex);
+        printf("upPointCount is %d downPointCount is %d\n",upPointCount,downPointCount);
+        peakPoint.isUsed = 1;
+        for (int i = 0; i < upPointNum; i++) {
+            ContourPoint *leftPoint = &(*contourPoints)[peakIndex-i];
+            int leftIndex = peakIndex-i;
+            while (leftPoint->isUsed == 1) {
+                leftIndex --;
+                if (leftIndex > 0) {
+                    leftPoint = &(*contourPoints)[leftIndex];
+                } else {
+                    leftPoint = &(*contourPoints)[contourPoints->size()];
+                    break;
+                }
+            }
+            leftPoint->isUsed = 1;
+        }
+        for (int i = 0; i < downPointNum; i++) {
+            ContourPoint *rightPoint = &(*contourPoints)[peakIndex+i];
+            int rightIndex = peakIndex+i;
+            while (rightPoint->isUsed == 1) {
+                rightIndex ++;
+                if (rightIndex < contourPoints->size()) {
+                    rightPoint = &(*contourPoints)[rightIndex];
+                } else {
+                    break;
+                }
+            }
+            rightPoint->isUsed = 1;
+        }
+        findFingerResult = true;
+    }
+    return findFingerResult;
+}
+
 
 int caculateOneImage()
 {
 //    //寻找轮廓
     cv::Rect bRect = cv::boundingRect( cv::Mat(contour) );
     
-    cv::Point center = Point2f(bRect.x+ bRect.size().width/2,bRect.y+bRect.size().height/2 * 1.5);
-
-    cv::Point contourCenter = Point2f(contourMat.cols/2,contourMat.rows/2 * 1.5);
+//    cv::Point center = Point2f(bRect.x+ bRect.size().width/2 *1.2,bRect.y+bRect.size().height/2 * 1.5);
+//    cv::Point contourCenter = Point2f(bRect.width/2,bRect.height/2);
+    cv::Moments mu = moments(contour,false);
+    cv::Point center =  Point2f( bRect.x+bRect.width/2, bRect.y+bRect.height*0.8);
+    
+    cv::Point contourCenter = Point2f(bRect.width/2 ,bRect.height*0.8);
     cv::Scalar color( 100, 150, 255 );
     circle(contourMat, contourCenter, 10, color);
+//    imshow("contourMat", contourMat);
     
-    imshow("contourMat", contourMat);
-    
-    float maxL;
-    vector<contourPoint> contourPoints;
-    int contourSize = contour.size()/2;
-    if (contourSize > 500) {
-        contourSize = 500;
-    }
-    float distance[contourSize];
-    memset(distance, 0.0, sizeof(distance));
-    
-    for (int i = 0; i < contour.size(); i++) {
+    float maxL = 0;
+//    vector<contourPoint> contourPoints;
+    int contourSize = contour.size();
+//    map<float,float> contourPoints;
+//    vector<ContourPoint> contourPoints;
+    map<int,ContourPoint> contourPoints;
+    vector<ContourPoint> contourArray;
+    for (int i = 0; i < contourSize; i++) {
         float Y = (contour[i].y - center.y);
         float X = (contour[i].x - center.x);
         float L =  sqrt(X*X + Y*Y);
-        float theta = (float) atan2((double) Y, (double) X);
-        int thetaInd = (theta + M_PI) / (2 * M_PI) * contourSize;
-        if (distance[thetaInd] < L) {
-            distance[thetaInd] = L;
-        }
+        float angle = M_PI + atan2(Y, X);
+        ContourPoint point;
+        point.value = L;
+        point.isUsed = 0;
+        point.angle = angle;
         if (L > maxL) {
             maxL = L;
         }
+        point.index = i;
+        contourPoints.insert(pair<int, ContourPoint>(i,point));
+        contourArray.push_back(point);
+//        contourPoints.push_back(point);
     }
+    printf("maxL is %f\n",maxL);
     
-    for (int i = 1; i < contourSize; i++) {
-        if (distance[i] == 0) {
-            if (distance[i - 1] != 0) {
-                int j;
-                for (j = i; j < contourSize; j++) {
-                    if (distance[j] != 0) {
-                        break;
-                    }
-                }
-                distance[i] = (distance[i-1] + distance[j])/2;
-            } else {
-//                printf("distance i == %d\n",i);
-            }
+    for (int i = 0;i<contourSize;i++) {
+        float derivate = 0;
+        float dotValue = 0;
+        float crossValue = 0;
+        if (i > 0 && i < contourSize-1) {
+            derivate = (contourPoints[i+1].value-contourPoints[i-1].value)/2;
+            dotValue = (contour[i-1].x-contour[i].x)*(contour[i+1].x-contour[i].x)+(contour[i-1].y-contour[i].y)*(contour[i+1].y-contour[i].y);
+            crossValue = (contour[i-1].x-contour[i].x)*(contour[i+1].x-contour[i].x)-(contour[i-1].y-contour[i].y)*(contour[i+1].y-contour[i].y);
+            crossValue = (contourPoints[i-1].angle-contourPoints[i+1].angle)*(contourPoints[i-1].angle-contourPoints[i].angle)-(contourPoints[i-1].value-contourPoints[i].value)*(contourPoints[i+1].value-contourPoints[i].value);
+        } else if(i == 0){
+            derivate = (contourPoints[1].value - contourPoints[0].value);
+        } else if (i == contourSize) {
+            derivate = (contourPoints[contourSize].value - contourPoints[contourSize-1].value);
         }
+        contourPoints[i].derivative = derivate;
+        contourPoints[i].dotValue = dotValue;
+        contourPoints[i].crossValue = crossValue;
     }
     
+    float distance[contourSize];
+    memset(distance, 0.0, sizeof(distance));
+
     float derivativePoints[contourSize];
     memset(derivativePoints, 0.0, sizeof(derivativePoints));
     
-    float maxDerivateValue = 0;
-    for (int i = 1; i < contourSize; i++) {
-        contourPoint point;
-        point.index = i;
-        point.value = distance[i];
-        float derivative = (distance[i+1] - distance[i-1])/2;
-        point.derivative = derivative;
-        contourPoints.push_back(point);
-        derivativePoints[i] = derivative;
-        if (derivative > maxDerivateValue) {
-            maxDerivateValue = derivative;
-        }
-    }
-    
-    float derivativeThreshold = 0.001;
-    float peakPoints[contourSize];
-    memset(peakPoints, 0.0, sizeof(peakPoints));
-    
-    float valleys[contourSize];
-    memset(valleys, 0.0, sizeof(valleys));
-    
     for (int i = 0; i < contourSize; i++) {
-        contourPoint point = contourPoints[i];
-        if (point.derivative < derivativeThreshold ) {
-            if (point.value > 2*maxL/3) {
-                peakPoints[i] = point.value;
-            } else {
-                valleys[i] = point.value;
-            }
-        }
+        distance[i] = contourPoints[i].value;
     }
     
-    showFloatGraph("theTa-Distance", distance, contourSize);
-
+//    float xValue[contourSize];
+//    for (int i = 0; i < contourSize; i++) {
+//        
+//        xValue[i] = contourPoints[i].dotValue;
+//    }
+//
+//    float yValue[contourSize];
+//    for (int i = 0; i < contourSize; i++) {
+//        yValue[i] = contourPoints[i].crossValue;
+//    }
+//    
+    for (int i = 0; i < contourSize;i++) {
+        derivativePoints[i] = contourPoints[i].derivative;
+    }
+    
+    showFloatGraph("index-Distance", distance, contourSize);
+    
     showFloatGraph("theTa-Distance-Derivative", derivativePoints, contourSize);
-
-    showFloatGraph("Peak-Point", peakPoints, contourSize);
-
-    showFloatGraph("valley-Point", valleys, contourSize);
     
-//    imshow("dstMat", contourMat);
-    string newImageString = toDirString + sourceFileName;
-    IplImage contourImage = contourMat.operator _IplImage();
-    cvSaveImage(newImageString.c_str(), &contourImage);
+//    showFloatGraph("angle-Distance", angles, contourSize);
+    
+//    showFloatGraph("cross-Distance", yValue, contourSize);
+
+    
+    sort(contourArray.begin(), contourArray.end(), compareDistance);
+    int peakIndex = contourArray[0].index;
     int fingerNum = 0;
-    int pointType = 0;
-    for (int i = 0;i < contourSize;i++) {
-        if (peakPoints[i] == 0) {
-            pointType = 1;
+    vector<int> peakPoints;
+    
+    int peakCount = 0;
+    ContourPoint peakPoint;
+    while(peakIndex >= 0)
+    {
+        Point point = contour[peakIndex];
+        if (findFingerPoints(&contourPoints,peakIndex) && (contourMat.rows - point.y) > 10) {
+            fingerNum++;
+            imshow("contourMat", contourMat);
+            peakPoints.push_back(peakIndex);
         }
-        else if (pointType == 1) {
-            pointType = 0;
-            fingerNum ++;
+
+        peakCount++;
+        if (peakCount < contourSize) {
+            peakPoint = contourPoints[contourArray[peakCount].index];
+            while (peakPoint.isUsed == 1) {
+                peakCount++;
+                if (peakCount < contourSize) {
+                    peakPoint = contourPoints[contourArray[peakCount].index];
+                } else{
+                    peakIndex = -1;
+                    break;
+                }
+            }
+            peakIndex = peakPoint.index;
+        } else {
+            peakIndex = -1;
         }
     }
+    
+    for (int i = 0; i < peakPoints.size(); i++) {
+        Point point = contour[peakPoints[i]];
+        ContourPoint contourPoint = contourPoints[peakPoints[i]];
+        printf("angle is %f\n",contourPoint.angle);
+        circle(contourMat, point , 20, color);
+        imshow("contourMat", contourMat);
+    }
+
+    printf("finger num is %d\n",fingerNum);
+    
+    
+
     return fingerNum;
-    printf("fingerNum is %d\n",fingerNum);
 }
+
+
 
 int main(int argc, char** argv)
 {
