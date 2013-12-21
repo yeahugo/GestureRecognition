@@ -13,6 +13,8 @@
 #include <iostream>
 #include <stdio.h>
 
+#include "GestureRecognitionImage.h"
+
 using namespace std;
 using namespace cv;
 
@@ -40,6 +42,7 @@ Mat hist;
 Mat histimg = Mat::zeros(200, 320, CV_8UC3);
 Mat backproj;
 Mat saveImage;
+GestureRecognitionImage gestureRecognizer;
 
 const char* trackbar_name = "on_or_off" ;
 
@@ -63,7 +66,7 @@ void on_or_off(int pos)
 /**
  * @function main
  */
-int main3( void )
+int main( void )
 {
     CvCapture* capture;
     Mat frame;
@@ -151,16 +154,16 @@ void detectAndDisplay( Mat frame )
         saveImage = frame;
         calcBackProject(&hue, 1, 0, hist, backproj, &phranges);
         backproj &= mask;
-        cvtColor(backproj, backproj, CV_GRAY2BGR);
+//        cvtColor(backproj, backproj, CV_GRAY2BGR);
         
         std::vector<std::vector<cv::Point> > contours;
         std::vector<cv::Vec4i> hierarchy;
         
-        cv::cvtColor(backproj, backproj, CV_BGR2GRAY);
+//        cv::cvtColor(backproj, backproj, CV_BGR2GRAY);
         
         cv::findContours(backproj, contours, hierarchy, CV_RETR_EXTERNAL, CV_CHAIN_APPROX_TC89_L1);
         
-        int massMin = 5000;
+        int massMin = 2000;
         cv::Scalar color( 255, 255, 255 );
         
         std::vector<Rect> faces;
@@ -169,15 +172,27 @@ void detectAndDisplay( Mat frame )
         cvCreateTrackbar(trackbar_name, window_name.c_str(), &value, 1,on_or_off);
         
         int idx = 0;
+        
         for (; idx >= 0; idx = hierarchy[idx][0]) {
             cv::Moments mom = cv::moments(cv::Mat(contours[idx]));
             int cMass = mom.m00;
             Point center = Point2d(mom.m10/mom.m00,mom.m01/mom.m00);
             cv::Rect bRect = cv::boundingRect( cv::Mat(contours[idx]) );
-
             if (cMass > massMin) {
                 cv::Mat contourImg(backproj.size(), backproj.type(), cv::Scalar(0));
                 cv::drawContours(backproj, contours, idx, color,CV_FILLED,8,hierarchy);
+                Mat contourMat = backproj(bRect);
+                HandStruct hand = gestureRecognizer.caculateOneImage(contours[idx], contourMat);
+                if (hand.peakNum ==5) {
+                    rectangle(backproj, bRect,color);                    
+                } else if(hand.peakNum ==2) {
+                    line(backproj, Point2f(bRect.x,bRect.y), Point2f(bRect.x+bRect.width,bRect.y), color);
+                    line(backproj, Point2f(bRect.x+bRect.width,bRect.y), Point2f(bRect.x+bRect.width/2,bRect.y + bRect.height), color);
+                    line(backproj, Point2f(bRect.x+bRect.width/2,bRect.y + bRect.height), Point2f(bRect.x,bRect.y), color);
+                } else if(hand.peakNum == 0) {
+                    circle(backproj, center, bRect.size().width, color);
+                }
+                printf("peakNum is %d, valley is %d\n",hand.peakNum,hand.valleyNum);
             }
         }
         

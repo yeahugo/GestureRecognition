@@ -8,20 +8,6 @@
 
 #include "GestureRecognitionImage.h"
 
-#include "opencv2/highgui/highgui.hpp"
-#include "opencv2/imgproc/imgproc.hpp"
-
-#include "slic.h"
-
-#include "GraphUtils.h"
-
-#include <iostream>
-#include <sys/types.h>
-#include <dirent.h>
-
-using namespace cv;
-using namespace std;
-
 struct ContourPoint
 {
     int index;
@@ -52,45 +38,46 @@ float hisRanges[] = {0,180};
 int hisSize = 16;
 const float* ranges = hisRanges;
 
-vector<Point > contour;
-Mat contourMat;
 
-void caculateBackProject(Mat frame_hue,Mat hist,Mat frame_mask)
-{
-    Mat backproj;
-    calcBackProject(&frame_hue, 1, 0, hist, backproj, &ranges);
-    backproj &= frame_mask;
-    cvtColor(backproj, backproj, CV_GRAY2BGR);
-    
-    std::vector<std::vector<cv::Point> > contours;
-    std::vector<cv::Vec4i> hierarchy;
-    
-    cv::cvtColor(backproj, backproj, CV_BGR2GRAY);
-    
-    cv::findContours(backproj, contours, hierarchy, CV_RETR_CCOMP, CV_CHAIN_APPROX_TC89_L1);
-    
-    int massMin = 15000;
-    cv::Scalar color( 255, 255, 255 );
-    
-    int idx = 0;
-    for (; idx >= 0; idx = hierarchy[idx][0]) {
-        cv::Moments mom = cv::moments(cv::Mat(contours[idx]));
-        int cMass = mom.m00;
-        cv::Rect bRect = cv::boundingRect( cv::Mat(contours[idx]) );
-        
-        if (cMass > massMin) {
-            cv::Mat contourImg(backproj.size(), backproj.type(), cv::Scalar(0));
-            contourImg = backproj(bRect);
-            contourImg.copyTo(handFrame);
-            contour = contours[idx];
-//            imshow("handFrame", handFrame);
-            break;
-        }
-    }
-}
+//vector<Point > contour;
+//Mat contourMat;
+
+//void caculateBackProject(Mat frame_hue,Mat hist,Mat frame_mask)
+//{
+//    Mat backproj;
+//    calcBackProject(&frame_hue, 1, 0, hist, backproj, &ranges);
+//    backproj &= frame_mask;
+//    cvtColor(backproj, backproj, CV_GRAY2BGR);
+//    
+//    std::vector<std::vector<cv::Point> > contours;
+//    std::vector<cv::Vec4i> hierarchy;
+//    
+//    cv::cvtColor(backproj, backproj, CV_BGR2GRAY);
+//    
+//    cv::findContours(backproj, contours, hierarchy, CV_RETR_CCOMP, CV_CHAIN_APPROX_TC89_L1);
+//    
+//    int massMin = 15000;
+//    cv::Scalar color( 255, 255, 255 );
+//    
+//    int idx = 0;
+//    for (; idx >= 0; idx = hierarchy[idx][0]) {
+//        cv::Moments mom = cv::moments(cv::Mat(contours[idx]));
+//        int cMass = mom.m00;
+//        cv::Rect bRect = cv::boundingRect( cv::Mat(contours[idx]) );
+//        
+//        if (cMass > massMin) {
+//            cv::Mat contourImg(backproj.size(), backproj.type(), cv::Scalar(0));
+//            contourImg = backproj(bRect);
+//            contourImg.copyTo(handFrame);
+//            contour = contours[idx];
+////            imshow("handFrame", handFrame);
+//            break;
+//        }
+//    }
+//}
 
 //肤色提取，skinArea为二值化肤色图像
-void skinExtract(const Mat &frame, Mat &skinArea)
+void skinExtract(const Mat &frame, Mat &skinArea,vector<Point> &contour)
 {
 	Mat YCbCr;
 	vector<Mat> planes;
@@ -127,7 +114,7 @@ void skinExtract(const Mat &frame, Mat &skinArea)
     Mat copyContour;
     skinArea.copyTo(copyContour);
     
-    findContours(copyContour, contours, hierarchy, CV_RETR_CCOMP, CV_CHAIN_APPROX_SIMPLE);
+    findContours(copyContour, contours, hierarchy, CV_RETR_CCOMP, CV_CHAIN_APPROX_TC89_L1);
     
     // 找到最大的轮廓
     int index;
@@ -146,62 +133,62 @@ void skinExtract(const Mat &frame, Mat &skinArea)
     cv::drawContours(copyContour, contours, index, color,CV_FILLED,8,hierarchy);
     
     cv::Rect bRect = cv::boundingRect( cv::Mat(contours[index]) );
-    contourMat = skinArea;
+//    contourMat = skinArea;
 //    contourMat = skinArea(bRect);
-    blur( contourMat, contourMat, Size(3,3) );
-    Canny(contourMat, contourMat, 50, 150, 3);
+    blur( skinArea, skinArea, Size(3,3) );
+    Canny(skinArea, skinArea, 50, 150, 3);
     contour = contours[index];
 }
 
 
-int findFace(Mat frame)
-{
-    std::vector<Rect> faces;
+//int findFace(Mat frame)
+//{
+//    std::vector<Rect> faces;
+//    
+//    Mat frame_gray,frame_hsv,frame_hue,frame_mask,hist;
+//    cvtColor( frame, frame_gray, CV_BGR2GRAY );
+//    cvtColor( frame, frame_hsv, CV_BGR2HSV );
+//
+//    frame_hue.create( frame_hsv.size(), frame_hsv.depth() );
+//    int ch[] = { 0, 0 };
+//    mixChannels( &frame_hsv, 1, &frame_hue, 1, ch, 1 );
+//    
+//    face_profile_cascade.detectMultiScale( frame, faces);
+//    
+//    double smin = 50;
+//    double _vmin = 80;
+//    double _vmax = 256;
+//    inRange(frame_hsv, Scalar(0, smin, MIN(_vmin,_vmax)),
+//            Scalar(180, 256, MAX(_vmin, _vmax)), frame_mask);
+//    
+//    int returnResult = -1;
+//    bool isFindFace = false;
+//    for( size_t i = 0; i < faces.size(); i++ )
+//    {
+//        Mat faceROI = frame_gray(faces[i]);
+//        std::vector<Rect> eyes;
+//        
+//        face_front_cascade.detectMultiScale( faceROI, eyes);
+//        if( eyes.size() > 0)
+//        {
+//            Mat roi(frame_hue,faces[i]);
+//            Mat maskroi(frame_mask,faces[i]);
+//            calcHist(&roi, 1, 0, maskroi, hist, 1, &hisSize, &ranges);
+//            normalize(hist, hist,0,255,CV_MINMAX);
+//            
+//            returnResult = 0;
+//            isFindFace = true;
+//            break;
+//        }
+//    }
+//    
+//    if (isFindFace) {
+//        caculateBackProject(frame_hue,hist,frame_mask);
+//    }
+//    
+//    return returnResult;
+//}
     
-    Mat frame_gray,frame_hsv,frame_hue,frame_mask,hist;
-    cvtColor( frame, frame_gray, CV_BGR2GRAY );
-    cvtColor( frame, frame_hsv, CV_BGR2HSV );
-
-    frame_hue.create( frame_hsv.size(), frame_hsv.depth() );
-    int ch[] = { 0, 0 };
-    mixChannels( &frame_hsv, 1, &frame_hue, 1, ch, 1 );
-    
-    face_profile_cascade.detectMultiScale( frame, faces);
-    
-    double smin = 50;
-    double _vmin = 80;
-    double _vmax = 256;
-    inRange(frame_hsv, Scalar(0, smin, MIN(_vmin,_vmax)),
-            Scalar(180, 256, MAX(_vmin, _vmax)), frame_mask);
-    
-    int returnResult = -1;
-    bool isFindFace = false;
-    for( size_t i = 0; i < faces.size(); i++ )
-    {
-        Mat faceROI = frame_gray(faces[i]);
-        std::vector<Rect> eyes;
-        
-        face_front_cascade.detectMultiScale( faceROI, eyes);
-        if( eyes.size() > 0)
-        {
-            Mat roi(frame_hue,faces[i]);
-            Mat maskroi(frame_mask,faces[i]);
-            calcHist(&roi, 1, 0, maskroi, hist, 1, &hisSize, &ranges);
-            normalize(hist, hist,0,255,CV_MINMAX);
-            
-            returnResult = 0;
-            isFindFace = true;
-            break;
-        }
-    }
-    
-    if (isFindFace) {
-        caculateBackProject(frame_hue,hist,frame_mask);
-    }
-    
-    return returnResult;
-}
-
 bool lessValue(const ContourPoint &p1,const ContourPoint &p2)
 {
     return p1.value > p2.value;
@@ -227,76 +214,99 @@ bool compareDistance(const ContourPoint  &p1,const ContourPoint &p2)
     return p1.value > p2.value;
 }
 
-bool findFingerPoints(map<int,ContourPoint> *contourPoints,int peakIndex)
+int findFingerPoints(map<int,ContourPoint> *contourPoints,int peakIndex)
 {
     ContourPoint peakPoint = (*contourPoints)[peakIndex];
-    int upPointNum = 30;
-    int upPointNumThreshold = upPointNum * 0.9;
+    int contourSize = contourPoints->size();
+    int upPointNum = contourSize*0.04;
+    int upPointNumThreshold = upPointNum * 0.8;
     
-    int upPointCount = 0;
-    for (int i = 0; i < upPointNum; i++) {
+    int downPointNum = contourSize*0.04;
+    int downPointNumThreshold = downPointNum * 0.8;
+    
+    int leftUpPointCount = 0;
+    int leftDownPointCount = 0;
+    for (int i = 1; i <= upPointNum; i++) {
         int leftIndex = peakPoint.index - i;
         ContourPoint leftPoint;
         if (leftIndex < 0) {
-            leftIndex = contourPoints->size()-i;
+            leftIndex = contourPoints->size()-i+1;
         }
         leftPoint = (*contourPoints)[leftIndex];
         if (leftPoint.derivative > 0) {
-            upPointCount ++;
+            leftUpPointCount ++;
+        }
+        if (leftPoint.derivative < 0) {
+            leftDownPointCount ++;
         }
     }
     
-    int downPointNum = 20;
-    int downPointNumThreshold = downPointNum * 0.9;
-    
-    int downPointCount = 0;
-    for (int i = 0; i< downPointNum; i++) {
+    int rightDownPointCount = 0;
+    int rightUpPointCount = 0;
+    for (int i = 1; i <= downPointNum; i++) {
         int rightIndex = peakPoint.index + i;
+        if (rightIndex > contourSize) {
+            rightIndex = i-1;
+        }
         ContourPoint rightPoint = (*contourPoints)[rightIndex];
         if (rightPoint.derivative < 0) {
-            downPointCount ++;
+            rightDownPointCount ++;
+        }
+        if (rightPoint.derivative > 0) {
+            rightUpPointCount ++;
         }
     }
     
-    bool findFingerResult = false;
-    if (upPointCount >= upPointNumThreshold && downPointCount >= downPointNumThreshold) {
+    int findFingerResult = 0;
+    if (leftUpPointCount >= upPointNumThreshold && rightDownPointCount >= downPointNumThreshold) {
         printf("peakCount is %d\n",peakIndex);
-        printf("upPointCount is %d downPointCount is %d\n",upPointCount,downPointCount);
+        printf("upPointCount is %d downPointCount is %d\n",leftUpPointCount,rightDownPointCount);
         peakPoint.isUsed = 1;
+        findFingerResult = 1;
+    }
+    else if (leftDownPointCount >= upPointNumThreshold && rightUpPointCount >= downPointNumThreshold) {
+        printf("valleyCount is %d\n",peakIndex);
+        printf("leftDownPointCount is %d rightUpPointCount is %d\n",leftUpPointCount,rightDownPointCount);
+        peakPoint.isUsed = 1;
+        findFingerResult = 2;
+    }
+    if (peakPoint.isUsed == 1 ) {
         for (int i = 0; i < upPointNum; i++) {
             ContourPoint *leftPoint = &(*contourPoints)[peakIndex-i];
             int leftIndex = peakIndex-i;
             while (leftPoint->isUsed == 1) {
                 leftIndex --;
-                if (leftIndex > 0) {
-                    leftPoint = &(*contourPoints)[leftIndex];
-                } else {
-                    leftPoint = &(*contourPoints)[contourPoints->size()];
+                if (leftIndex == peakIndex) {
                     break;
                 }
+                if (leftIndex < 0) {
+                    leftIndex = contourSize-i;
+                }
+                leftPoint = &(*contourPoints)[leftIndex];
             }
             leftPoint->isUsed = 1;
         }
         for (int i = 0; i < downPointNum; i++) {
             ContourPoint *rightPoint = &(*contourPoints)[peakIndex+i];
             int rightIndex = peakIndex+i;
-            while (rightPoint->isUsed == 1) {
+            while (rightPoint->isUsed == 1 ) {
                 rightIndex ++;
-                if (rightIndex < contourPoints->size()) {
-                    rightPoint = &(*contourPoints)[rightIndex];
-                } else {
+                if (rightIndex == peakIndex) {
                     break;
                 }
+                if (rightIndex > contourSize) {
+                    rightIndex = i;
+                }
+                rightPoint = &(*contourPoints)[rightIndex];
             }
             rightPoint->isUsed = 1;
         }
-        findFingerResult = true;
     }
     return findFingerResult;
 }
 
 
-int caculateOneImage()
+HandStruct GestureRecognitionImage::caculateOneImage(vector<Point > contour,Mat contourMat)
 {
 //    //寻找轮廓
     cv::Rect bRect = cv::boundingRect( cv::Mat(contour) );
@@ -307,15 +317,16 @@ int caculateOneImage()
     cv::Point center =  Point2f( bRect.x+bRect.width/2, bRect.y+bRect.height*0.8);
     
     cv::Point contourCenter = Point2f(bRect.width/2 ,bRect.height*0.8);
-    cv::Scalar color( 100, 150, 255 );
-    circle(contourMat, contourCenter, 10, color);
-//    imshow("contourMat", contourMat);
+    cv::Scalar whiteColor( 255, 255, 255);
+    cv::Scalar color( 255, 255, 255);
+    circle(contourMat, contourCenter, 10, whiteColor);
+    cv::Scalar blackColor( 0, 0, 0);
+    circle(contourMat, contourCenter, 10, blackColor);
+    
+    imshow("contourMat", contourMat);
     
     float maxL = 0;
-//    vector<contourPoint> contourPoints;
     int contourSize = contour.size();
-//    map<float,float> contourPoints;
-//    vector<ContourPoint> contourPoints;
     map<int,ContourPoint> contourPoints;
     vector<ContourPoint> contourArray;
     for (int i = 0; i < contourSize; i++) {
@@ -333,7 +344,6 @@ int caculateOneImage()
         point.index = i;
         contourPoints.insert(pair<int, ContourPoint>(i,point));
         contourArray.push_back(point);
-//        contourPoints.push_back(point);
     }
     printf("maxL is %f\n",maxL);
     
@@ -366,44 +376,33 @@ int caculateOneImage()
         distance[i] = contourPoints[i].value;
     }
     
-//    float xValue[contourSize];
-//    for (int i = 0; i < contourSize; i++) {
-//        
-//        xValue[i] = contourPoints[i].dotValue;
-//    }
-//
-//    float yValue[contourSize];
-//    for (int i = 0; i < contourSize; i++) {
-//        yValue[i] = contourPoints[i].crossValue;
-//    }
-//    
     for (int i = 0; i < contourSize;i++) {
         derivativePoints[i] = contourPoints[i].derivative;
     }
     
-    showFloatGraph("index-Distance", distance, contourSize);
-    
-    showFloatGraph("theTa-Distance-Derivative", derivativePoints, contourSize);
-    
-//    showFloatGraph("angle-Distance", angles, contourSize);
-    
-//    showFloatGraph("cross-Distance", yValue, contourSize);
-
+//    showFloatGraph("index-Distance", distance, contourSize);
+//    showFloatGraph("theTa-Distance-Derivative", derivativePoints, contourSize);
     
     sort(contourArray.begin(), contourArray.end(), compareDistance);
     int peakIndex = contourArray[0].index;
     int fingerNum = 0;
+    int valleyNum = 0;
     vector<int> peakPoints;
+    vector<int> valleyPoints;
     
     int peakCount = 0;
     ContourPoint peakPoint;
     while(peakIndex >= 0)
     {
         Point point = contour[peakIndex];
-        if (findFingerPoints(&contourPoints,peakIndex) && (contourMat.rows - point.y) > 10) {
+        int fingerResult = findFingerPoints(&contourPoints,peakIndex);
+        if (fingerResult == 1 && (contourMat.rows - point.y) > 10) {
             fingerNum++;
-            imshow("contourMat", contourMat);
             peakPoints.push_back(peakIndex);
+        }
+        if (fingerResult == 2) {
+            valleyNum++;
+            valleyPoints.push_back(peakIndex);
         }
 
         peakCount++;
@@ -426,22 +425,30 @@ int caculateOneImage()
     
     for (int i = 0; i < peakPoints.size(); i++) {
         Point point = contour[peakPoints[i]];
+        point = Point2f(point.x-bRect.x,point.y-bRect.y);
         ContourPoint contourPoint = contourPoints[peakPoints[i]];
-        printf("angle is %f\n",contourPoint.angle);
-        circle(contourMat, point , 20, color);
-        imshow("contourMat", contourMat);
+//        printf("angle is %f\n",contourPoint.angle);
+        circle(contourMat, point , 20, whiteColor);
+//        circle(contourMat, point , 20, blackColor);
     }
+    for (int i = 0; i < valleyPoints.size(); i++) {
+        Point point = contour[valleyPoints[i]];
+        ContourPoint contourPoint = contourPoints[valleyPoints[i]];
+//        circle(contourMat, point , 20, color);
+//        rectangle(contourMat, point, Point2f(point.x+10,point.y+10), color);
+    }
+//    imshow("contourMat", contourMat);
 
-    printf("finger num is %d\n",fingerNum);
-    
-    
+    HandStruct returnHand;
+    returnHand.peakNum = fingerNum;
+    returnHand.valleyNum = valleyPoints.size();
 
-    return fingerNum;
+    return returnHand;
 }
 
 
 
-int main(int argc, char** argv)
+int main2(int argc, char** argv)
 {
     DIR *dp;
     struct dirent *dirp;
@@ -475,23 +482,23 @@ int main(int argc, char** argv)
 //                skinFrame.create(frame.rows, frame.cols, CV_8UC1);
 //                skinExtract(frame, skinFrame);
 //            }
-            contour.clear();
-            contourMat.setTo(0);
+            vector<Point > contour;
             Mat skinFrame;
             skinFrame.create(frame.rows, frame.cols, CV_8UC1);
-            skinExtract(frame, skinFrame);
-
-            int finger = caculateOneImage();
+            skinExtract(frame, skinFrame,contour);
+            GestureRecognitionImage gestureRecognizer;
+            HandStruct hand = gestureRecognizer.caculateOneImage(contour,skinFrame);
+            int finger = hand.peakNum;
             
             string failImageString = failString + sourceFileName;
             if (finger != 5) {
                 imwrite(failImageString, frame);
                 printf("finger is %d\n",finger);
+                
                 failImageNum++;
             } else{
                 printf("find finger success!!\n");
             }
-//            imshow("skinImage", contourMat);
         }
     }
     
