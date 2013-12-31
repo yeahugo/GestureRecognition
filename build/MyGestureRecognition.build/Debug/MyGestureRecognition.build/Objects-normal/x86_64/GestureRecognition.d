@@ -11,5 +11,6 @@ dependencies: \
   /usr/local/include/opencv2/core/core_c.h \
   /usr/local/include/opencv2/imgproc/imgproc.hpp \
   /usr/local/include/opencv2/imgproc/types_c.h \
+  /usr/local/include/opencv2/video/tracking.hpp \
   /Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/GestureRecognitionImage.h \
   /Users/yeahugo/Documents/Search/Computer\ Vision/MyGestureRecognition/GraphUtils.h

@@ -27,6 +27,7 @@ struct HandStruct
 {
     int peakNum;
     int valleyNum;
+    int crossNum;
 } ;
 
 class GestureRecognitionImage
